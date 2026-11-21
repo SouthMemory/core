@@ -1,0 +1,5 @@
+Batch4 A-family single-axis — PASSED (2026-11-20)
+
+418 lines (ids 300+), 1672 ranks (dir0 rank 0..3)
+EQUIP_SPELL; magnitude 1.0 / 1.25 / 1.5 / 2.0
+GM: no issues reported.

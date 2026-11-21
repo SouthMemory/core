@@ -1,0 +1,18 @@
+Batch5 reagents + gaps — applied 2026-11-20
+
+Reagents:
+- If rank0 formula already has reagents (e.g. crusader 20034), all upgrade formulas on that
+  line inherit the same reagent kinds; counts scale by rank.
+- Else: DE mat + craft trade-good (class7 stackable Q1-3).
+Counts by rank: 0=(1,1) 1=(1,2) 2=(2,2) 3=(2,3). Vanilla formulas <35000 untouched.
+Crusader check: 20034=14344x4+12811x2; 35300=14344x1+12811x2; 35302=14344x2+12811x3.
+
+Gap: Whirlwind 9632 -> line 179, baseF 55400, dirs 迅疾+强效+急促.
+
+Spot:
+- 20034 crusader: 14344x4 + 12811x2 (vanilla restored)
+- 45089 HOJ: 14344 + Dark Iron Bar
+- 35320 Bonereaver: Nexus Crystal + Arcanite Bar
+- 55400 WW: Small Radiant Shard + Steel Bar
+
+Restart mangosd; client patch copied.

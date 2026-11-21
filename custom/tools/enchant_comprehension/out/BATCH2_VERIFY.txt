@@ -1,0 +1,7 @@
+Batch2 weapon chance-on-hit — PASSED (2026-11-19)
+
+Generated: 176 lines (ids 3..178), 1544 ranks
+Template: 迅疾 + 强效(若有数值) + 急促|延展(若有周期|持续)
+ID: formula 36000+, proc 40000+, enchant 31000+ (phase1 untouched)
+
+GM spot-check: no issues reported (incl. iconic weapons list).

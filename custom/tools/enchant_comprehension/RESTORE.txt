@@ -1,0 +1,50 @@
+﻿附魔领悟资产恢复说明（MangosZero 已可弃用）
+========================================
+
+本目录已纳入 SouthMemory/core，删除本机 mangos/mangoszero 前请先：
+  1) git add + commit + push（custom/ 约 50MB，普通 Git 即可，无需 LFS）
+  2) 按下方「删前检查」勾完
+
+目录
+----
+  *.py, blacklist.txt     生成/打包脚本（自 Zero 迁入；路径仍可能写死 mangos，重跑前需改）
+  dbc_to_vmangos_sql.py   vmangos：out/Spell.dbc 增量 → spell_template SQL
+  probe_dbc_overlap.py    冲突探针
+  out/                    现网成品（与 data/5875 + wow1.12 已校验一致）
+    Spell.dbc
+    SpellItemEnchantment.dbc
+    SkillLineAbility.dbc
+    patch-3.MPQ
+  base_dbc/               自定义前的底包三份 DBC（重跑生成用）
+  reference/zero-mgr/     Zero Mgr 源码只读对照（勿直接编译进 vmangos）
+
+日常部署（丢失 DBC/MPQ 时）
+----
+  复制：
+    out/SpellItemEnchantment.dbc
+      → <DataDir>/dbc/SpellItemEnchantment.dbc
+        （本机常见：Documents/vmangos/data/5875/dbc/）
+    out/patch-3.MPQ
+      → <客户端>/Data/patch-3.MPQ
+        （本机常见：Documents/vmangos/wow1.12/Data/）
+  库表：执行 core/sql/custom/enchant_comprehension/01–06（若库是空的）
+  服务端法术/SLA 在 DB，不必把 out/Spell.dbc 拷进 DataDir（vmangos 读 spell_template）
+
+仅重打客户端 patch（out 三份 DBC 仍在时）
+----
+  pip install pympq   # _make_patch.py 依赖
+  按需改 rebuild.py / _make_patch.py 路径后：
+    python rebuild.py
+  产出 out/patch-3.MPQ
+
+文档
+----
+  core/custom/docs/enchant-comprehension/
+
+删 MangosZero 前检查
+----
+  [ ] core 已 push，且含 custom/docs/ + custom/tools/enchant_comprehension/out/
+  [ ] 本机 data/5875/dbc/SpellItemEnchantment.dbc 与 out/ 哈希一致
+  [ ] 本机 wow1.12/Data/patch-3.MPQ 与 out/ 哈希一致
+  [ ] 游戏内附魔绿字/配方仍正常（可选冒烟）
+  [ ] 确认不再需要 Zero 的其它无关工程后再删整个 mangos 目录

@@ -1,0 +1,14 @@
+Phase1 verify — PASSED (2026-11-19)
+
+Runtime: enchant_line + enchant_line_rank; dual conf chances.
+Pilots: line1 Crusader 20034/1900 (迅疾/强效/延展); line2 Bonereaver base 35320.
+
+GM checklist (all pass):
+1) Cast 20034 learns a direction-1 formula; DE base-only crusader gear does NOT teach dir1
+2) Cast dir1 rank1 can learn rank2; skillbook drops rank1 (mutex)
+3) Cast known rank3 onto blank weapon applies rank3 enchant directly
+4) Weapon with enhanced enchant is tradeable (no soulbound flag)
+5) Confirmed with DE/cast rules above
+
+Patch: client Data/patch-3.MPQ applied by verifier.
+Cleaned: map 21153; old variant spike rows removed.

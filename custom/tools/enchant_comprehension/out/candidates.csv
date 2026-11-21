@@ -1,0 +1,179 @@
+﻿source_spell,spell_name,enchant_id,formula_spell,item_count,sample_items
+56,昏迷,30000,35000,5,9477:The Chief's Enforcer; 10627:Bludgeon of the Grinning Dog; 12400:The Judge's Gavel; 12528:The Judge's Gavel; 12796:Hammer of the Titans
+871,盾墙,30001,35001,1,23051:Glaive of the Defender
+3742,闪电之盾,30002,35002,1,9467:Gahz'rilla Fang
+8191,狂热,30003,35003,1,6622:Sword of Zeal
+8313,毒药,30004,35004,1,6904:Bite of Serra'kis
+8348,朱莉叶的祝福,30005,35005,1,6660:Julie's Dagger
+8552,虚弱诅咒,30006,35006,1,880:Staff of Horrors
+9632,旋风斩,30007,35007,1,7717:Ravager
+9796,荒芜,30008,35008,1,7959:Blight
+9800,神圣之盾,30009,35009,1,7960:Truesilver Champion
+9806,幽影突袭,30010,35010,1,7961:Phantom Blade
+10351,蜥蜴之皮,30011,35011,1,8223:Blade of the Basilisk
+10373,重创,30012,35012,1,9425:Pendulum of Doom
+11657,迦萨斯,30013,35013,1,11086:Jang'thraze the Protector
+11658,苏萨斯,30014,35014,1,9372:Sul'thraze the Lasher
+11790,毒云术,30015,35015,1,9453:Toxic Revenger
+11791,刺破护甲,30016,35016,2,9465:Digmaster 5000; 9485:Vibroblade
+11879,缴械,30017,35017,1,9608:Shoni's Disarming Tool
+12685,渐隐术,30018,35018,1,10625:Stealthblade
+12686,狂怒,30019,35019,1,10626:Ragehammer
+12731,巨石之力,30020,35020,1,9418:Stoneslayer
+13049,龙之召唤,30021,35021,1,10847:Dragon's Call
+13318,撕裂,30022,35022,2,12791:Barman Shanker; 13016:Killmaim
+13438,火球术,30023,35023,1,9386:Excavator's Brand
+13439,寒冰箭,30024,35024,4,810:Hammer of the Northern Wind; 3854:Frost Tiger Blade; 10623:Winter's Bite; 10761:Coldrage Dagger
+13440,暗影箭,30025,35025,5,1481:Grimclaw; 1482:Shadowfang; 2256:Skeletal Club; 6831:Black Menace; 12250:Midnight Axe
+13442,火焰箭,30026,35026,2,6220:Meteor Shard; 18671:Baron Charr's Sceptre
+13480,暗影箭,30027,35027,1,1318:Night Reaver
+13482,闪电箭,30028,35028,2,8006:The Ziggler; 9446:Electrocutioner Leg
+13486,致伤,30029,35029,1,9511:Bloodletter Scalpel
+13490,哀嚎之刃,30030,35030,1,6331:Howling Blade
+13491,拳击,30031,35031,1,2942:Iron Knuckles
+13496,眩晕,30032,35032,1,4090:Mug O' Hurt
+13518,毒药,30033,35033,1,4446:Blackvenom Blade
+13519,圣光击,30034,35034,1,754:Shortsword of Vengeance
+13524,斯塔文的诅咒,30035,35035,1,934:Stalvan's Reaper
+13526,腐蚀毒药,30036,35036,2,6909:Strike of the Hydra; 11635:Hookfang Shanker
+13527,闪电箭,30037,35037,1,9486:Supercharger Battle Axe
+13528,力量衰减,30038,35038,1,1727:Sword of Decay
+13530,腐蚀术,30039,35039,1,8225:Tainted Pierce
+13532,雷霆一击,30040,35040,1,9639:The Hand of Antu'sul
+13533,加速术,30041,35041,1,9423:The Jackhammer
+13534,缴械,30042,35042,1,7954:The Shatterer
+13752,精灵之火,30043,35043,1,869:Dazzling Longsword
+14106,暗影箭,30044,35044,1,12974:The Black Knight
+14118,撕裂,30045,35045,1,12463:Drakefang Butcher
+14119,闪电箭,30046,35046,1,2263:Phytoblade
+14126,致伤,30047,35047,1,13054:Grim Reaper
+15280,破甲斩,30048,35048,1,11607:Dark Iron Sunderer
+15283,昏迷猛击,30049,35049,1,11608:Dark Iron Pulverizer
+15494,铸铁之怒,30050,35050,1,11684:Ironfoe
+15602,安格弗的剑,30051,35051,1,11817:Lord General's Sword
+15662,火球术,30052,35052,1,12243:Smoldering Claw
+16400,毒药,30053,35053,2,4449:Naraxis' Fang; 5752:Wyvern Tailspike
+16401,毒药,30054,35054,1,1726:Poison-tipped Bone Spear
+16403,撕裂,30055,35055,2,6738:Bleeding Crescent; 8224:Silithid Ripper
+16405,致伤,30056,35056,4,8190:Hanzo Sword; 9478:Ripsaw; 11603:Vilerend Slicer; 13060:The Needler
+16406,撕裂,30057,35057,2,5616:Gutwrencher; 15814:Hameya's Slayer
+16407,冰霜冲击,30058,35058,1,17704:Edge of Winter
+16408,暗影箭,30059,35059,1,11121:Darkwater Talwar
+16409,暗影箭,30060,35060,3,1387:Ghoulfang; 2912:Claw of the Shadowmancer; 3822:Runic Darkblade
+16411,重创,30061,35061,1,10628:Deathblow
+16413,火球术,30062,35062,2,10797:Firebreather; 12992:Searing Blade
+16414,吸取生命,30063,35063,1,11920:Wraith Scythe
+16415,火球术,30064,35064,1,2915:Taran Icebreaker
+16433,致伤,30065,35065,1,11744:Bloodfist
+16454,灼热冲击,30066,35066,1,12531:Searing Needle
+16528,麻木之痛,30067,35067,1,12582:Keris of Zul'Serak
+16549,致伤,30068,35068,1,12583:Blackhand Doomsaw
+16551,恶魔之击,30069,35069,1,12590:Felstriker
+16559,烈焰之怒,30070,35070,1,11809:Flame Wrath
+16602,沙赫拉姆,30071,35071,1,12592:Blackblade of Shahram
+16603,恶魔之叉,30072,35072,1,12621:Demonfork
+16898,光辉,30073,35073,1,12777:Blazing Rapier
+16908,驱散魔法,30074,35074,1,12781:Serenity
+16916,勇士之力,30075,35075,1,12790:Arcanite Champion
+16921,闪电链,30076,35076,1,12794:Masterwork Stormhammer
+16927,冰冻,30077,35077,1,12797:Frostguard
+16928,护甲粉碎,30078,35078,1,12798:Annihilator
+17148,碎灵,30079,35079,1,1263:Brain Hacker
+17152,命运,30080,35080,1,647:Destiny
+17153,撕裂,30081,35081,1,2291:Kang the Decapitator
+17196,横扫重锤,30082,35082,1,12969:Seeping Willow
+17308,昏迷,30083,35083,1,13198:Hurd Smasher
+17315,刺破护甲,30084,35084,2,13204:Bashguuder; 13286:Rivenspike
+17331,水晶蜘蛛之牙,30085,35085,1,13218:Fang of the Crystal Spider
+17352,银色复仇者,30086,35086,1,13246:Argent Avenger
+17407,致伤,30087,35087,1,13285:The Nicker
+17483,暗影箭,30088,35088,1,13348:Demonshear
+17484,颅骨烙印,30089,35089,1,13361:Skullforge Reaver
+17500,马龙之肘,30090,35090,1,13393:Malown's Slam
+17504,撕裂,30091,35091,1,809:Bloodrazor
+17505,提米的诅咒,30092,35092,1,13401:The Cruel Hand of Timmy
+17506,灵魂击碎者,30093,35093,1,13408:Soul Breaker
+17510,腐蚀术,30094,35094,1,13032:Sword of Corruption
+17511,毒药,30095,35095,2,13035:Serpent Slicer; 17002:Ichor Spitter
+18075,撕裂,30096,35096,1,10772:Glutton's Cleaver
+18077,毒药,30097,35097,1,899:Venom Web Fang
+18078,撕裂,30098,35098,1,3336:Flesh Piercer
+18081,闪电箭,30099,35099,1,9651:Gryphon Rider's Stormhammer
+18082,火球术,30100,35100,1,12792:Volcanic Hammer
+18083,火焰箭,30101,35101,1,9419:Galgann's Firehammer
+18084,吸取生命,30102,35102,1,10804:Fist of the Damned
+18086,火焰箭,30103,35103,2,1728:Teebu's Blazing Longsword; 11803:Force of Magma
+18088,腐蚀术,30104,35104,1,10803:Blade of the Wretched
+18089,闪电箭,30105,35105,1,11902:Linken's Sword of Mastery
+18090,致伤,30106,35106,1,1986:Gutrender
+18091,奥术冲击,30107,35107,1,2000:Archeus
+18092,冰霜冲击,30108,35108,1,5182:Shiver Blade
+18104,愤怒,30109,35109,1,811:Axe of the Deep Woods
+18107,致伤,30110,35110,1,2164:Gut Ripper
+18112,火焰箭,30111,35111,1,13262:Ashbringer
+18138,暗影箭,30112,35112,3,937:Black Duskwood Staff; 2163:Shadowblade; 17068:Deathbringer
+18197,毒药,30113,35113,2,5426:Serpent's Kiss; 6472:Stinging Viper
+18199,火球术,30114,35114,1,2299:Burning War Axe
+18200,撕裂,30115,35115,1,7753:Bloodspiller
+18202,撕裂,30116,35116,2,13057:Bloodpike; 13399:Gargoyle Shredder Talons
+18203,毒药,30117,35117,1,13183:Venomspitter
+18204,冰霜冲击,30118,35118,1,7730:Cobalt Crusher
+18205,暗影箭,30119,35119,3,3194:Black Malice; 17752:Satyr's Lash; 19910:Arlokk's Grasp
+18206,重创,30120,35120,1,9475:Diabolic Skiver
+18208,毒药,30121,35121,1,1265:Scorpion Sting
+18211,暗影箭,30122,35122,3,1982:Nightblade; 13053:Doombringer; 19170:Ebon Hand
+18214,暗影箭,30123,35123,1,13051:Witchfury
+18217,暗影箭,30124,35124,1,2205:Duskbringer
+18276,冰霜冲击,30125,35125,2,13984:Darrowspike; 14487:Bonechill Hammer
+18278,沉默,30126,35126,1,13953:Silent Fang
+18289,慢性毒菌,30127,35127,1,13983:Gravestone War Axe
+18381,残废术,30128,35128,1,14145:Cursed Felblade
+18398,冰霜冲击,30129,35129,2,5756:Sliverblade; 19099:Glacial Blade
+18633,虚弱疾病,30130,35130,1,14531:Frightskull Shaft
+18652,虹吸生命,30131,35131,1,14541:Barovian Family Sword
+18656,腐蚀术,30132,35132,1,14576:Ebon Hilt of Marduk
+18796,火球术,30133,35133,1,870:Fiery War Axe
+18797,风暴战斧,30134,35134,1,871:Flurry Axe
+18803,集中,30135,35135,1,2243:Hand of Edward the Odd
+18833,火焰箭,30136,35136,1,14555:Alcor's Sunrazor
+19260,冰霜冲击,30137,35137,1,13148:Chillpike
+19755,惊骇之爪,30138,35138,1,14024:Frightalon
+19874,闪电箭,30139,35139,1,15418:Shimmering Platinum Warhammer
+20586,断风者,30140,35140,1,15853:Windreaper
+20869,冰霜冲击,30141,35141,1,5815:Glacial Stone
+20883,奥术冲击,30142,35142,1,17054:Joonho's Mercy
+21140,重创,30143,35143,2,17075:Vis'kag the Bloodletter; 19353:Drake Talon Cleaver
+21151,血腥撕裂者,30144,35144,1,17071:Gutgore Ripper
+21152,震地者,30145,35145,1,17073:Earthshaker
+21153,削骨之刃,30146,35146,1,17076:Bonereaver's Edge
+21159,火球术,30147,35147,1,17193:Sulfuron Hammer
+21162,火球术,30148,35148,1,"17182:Sulfuras, Hand of Ragnaros"
+21165,加速术,30149,35149,1,17112:Empyrean Demolisher
+21170,吸取生命,30150,35150,1,17074:Shadowstrike
+21179,闪电链,30151,35151,1,17223:Thunderstrike
+21919,痛击,30152,35152,1,17705:Thrash Blade
+21949,撕裂,30153,35153,1,17730:Gatorbite Axe
+21951,石拳,30154,35154,2,17733:Fist of Stone; 17943:Fist of Stone
+21952,毒药,30155,35155,1,17738:Claw of Celebras
+21961,致伤,30156,35156,1,17766:Princess Theradras' Scepter
+21992,雷霆之怒,30157,35157,1,"19019:Thunderfury, Blessed Blade of the Windseeker"
+22639,伊森哈德扫击,30158,35158,1,18202:Eskhandar's Left Claw
+22640,伊森哈德之怒,30159,35159,1,18203:Eskhandar's Right Claw
+22850,庇护,30160,35160,1,18348:Quel'Serrar
+22863,速度,30161,35161,1,18410:Sprinter's Sword
+23267,火球术,30162,35162,1,18816:Perdition's Blade
+23454,昏迷,30163,35163,1,19323:The Unstoppable Force
+23592,闪电箭,30164,35164,1,19100:Electrified Dagger
+23604,Reduce Threat,30165,35165,1,19166:Black Amnesty
+23605,法术易伤,30166,35166,1,19169:Nightfall
+23719,狂野之怒,30167,35167,1,19334:The Untamed Blade
+24251,祖利安切割,30168,35168,1,19901:Zulian Slicer
+24254,毒蛇嘶鸣,30169,35169,1,19908:Sceptre of Smiting
+24257,耶克里克的致命攻击,30170,35170,1,19918:Jeklik's Crusher
+24388,脑部损伤,30171,35171,1,19324:The Lobotomizer
+24585,吸取生命,30172,35172,1,19852:Ancient Hakkari Manslayer
+24993,酸液冲击,30173,35173,1,20578:Emerald Dragonfang
+26108,疯狂之眼,30174,35174,1,21134:Dark Edge of Insanity
+26415,震击,30175,35175,1,21679:Kalimdor's Revenge
+26693,吸取生命,30176,35176,1,"21856:Neretzek, The Blood Drinker"
+28414,灰烬使者的召唤,30177,35177,1,22691:Corrupted Ashbringer

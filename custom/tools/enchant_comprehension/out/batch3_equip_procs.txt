@@ -1,0 +1,34 @@
+line=200 shell=4070 payload=10342 守护者 class=4 inv=4096 dirs=迅疾+强效+延展 sample=1490 baseF=45000 base_ppm=0.0
+line=201 shell=7617 payload=16783 暗影箭 class=4 inv=8388672 dirs=迅疾+强效 sample=1131 baseF=45010 base_ppm=0.0
+line=202 shell=7619 payload=16784 暗影箭 class=4 inv=16384 dirs=迅疾+强效 sample=7747 baseF=45017 base_ppm=0.0
+line=203 shell=7711 payload=7712 Add Fire Dam - Weap 02 class=4 inv=4 dirs=迅疾+强效 sample=17111 baseF=45024 base_ppm=0.0
+line=204 shell=7721 payload=7714 Add Fire Dam - Weap 04 class=4 inv=1024 dirs=迅疾+强效 sample=12631 baseF=45031 base_ppm=0.0
+line=205 shell=8397 payload=10368 乌瑟尔之光 class=4 inv=4096 dirs=迅疾+强效+延展 sample=11302 baseF=45038 base_ppm=0.0
+line=206 shell=9160 payload=9159 催眠术 class=4 inv=32 dirs=迅疾+强效+延展 sample=7375 baseF=45048 base_ppm=0.0
+line=207 shell=9233 payload=9057 火焰箭 class=4 inv=1024 dirs=迅疾+强效 sample=7284 baseF=45058 base_ppm=0.0
+line=208 shell=9778 payload=9777 Proc Self Heal 22 class=4 inv=32 dirs=迅疾+强效 sample=7939 baseF=45065 base_ppm=0.0
+line=209 shell=13959 payload=16782 电荷冲击 class=4 inv=16384 dirs=迅疾+强效 sample=9458 baseF=45072 base_ppm=0.0
+line=210 shell=15594 payload=15595 意志之力 class=4 inv=4096 dirs=迅疾+强效+延展 sample=11810 baseF=45079 base_ppm=0.0
+line=211 shell=15600 payload=15601 正义之手 class=4 inv=4096 dirs=迅疾+强效 sample=11815 baseF=45089 base_ppm=0.6
+line=212 shell=16611 payload=16608 魔铸胸甲 class=4 inv=32 dirs=迅疾+强效+急促 sample=12628 baseF=45096 base_ppm=0.0
+line=213 shell=16615 payload=16614 Add Lightning Dam - Weap 03 class=4 inv=1024 dirs=迅疾+强效 sample=12632 baseF=45106 base_ppm=0.0
+line=214 shell=16620 payload=16621 Proc Self Invulnerability class=4 inv=32 dirs=迅疾+强效+延展 sample=12641 baseF=45113 base_ppm=0.0
+line=215 shell=17350 payload=17351 银色黎明 class=4 inv=16384 dirs=迅疾+强效+延展 sample=13243 baseF=45123 base_ppm=0.0
+line=216 shell=17495 payload=17496 惩戒之盾 class=4 inv=16384 dirs=迅疾+强效 sample=13375 baseF=45133 base_ppm=0.0
+line=217 shell=18097 payload=17154 绿塔 class=4 inv=16384 dirs=迅疾+强效+延展 sample=1204 baseF=45140 base_ppm=0.0
+line=218 shell=18815 payload=18817 吸取生命 class=4 inv=16384 dirs=迅疾+强效 sample=1168 baseF=45150 base_ppm=0.0
+line=219 shell=19409 payload=18828 骨甲术 class=4 inv=16384 dirs=迅疾+强效+延展 sample=1979 baseF=45157 base_ppm=0.0
+line=220 shell=20847 payload=18946 暴风雄狮号角 class=4 inv=4096 dirs=迅疾+强效+延展 sample=14557 baseF=45167 base_ppm=0.0
+line=221 shell=21185 payload=21186 脊骨收割者 class=2 inv=131072 dirs=迅疾+强效 sample=17104 baseF=45177 base_ppm=0.0
+line=222 shell=21969 payload=21970 天选印记 class=4 inv=4096 dirs=迅疾+强效+延展 sample=17774 baseF=45184 base_ppm=0.0
+line=223 shell=21978 payload=27860 吞噬之影 class=2 inv=2097152 dirs=迅疾+强效 sample=17780 baseF=45194 base_ppm=0.0
+line=224 shell=22618 payload=22600 力反馈盾牌 class=4 inv=16384 dirs=迅疾+强效 sample=18168 baseF=45201 base_ppm=0.0
+line=225 shell=23686 payload=23687 闪电攻击 class=4 inv=4096 dirs=迅疾+强效 sample=19289 baseF=45208 base_ppm=2.0
+line=226 shell=23688 payload=23684 蓝龙光环 class=4 inv=4096 dirs=迅疾+强效+延展 sample=19288 baseF=45215 base_ppm=0.0
+line=227 shell=23689 payload=23682 英雄 class=4 inv=4096 dirs=迅疾+强效 sample=19287 baseF=45225 base_ppm=4.0
+line=228 shell=25669 payload=24241 斩首 class=2 inv=131072 dirs=迅疾+强效 sample=19874 baseF=45232 base_ppm=1.0
+line=229 shell=25906 payload=25907 法术爆裂 class=4 inv=2048 dirs=迅疾+强效+延展 sample=21190 baseF=45239 base_ppm=0.0
+line=230 shell=27656 payload=27655 烈焰鞭笞 class=4 inv=4096 dirs=迅疾+强效 sample=22321 baseF=45249 base_ppm=3.0
+line=231 shell=29150 payload=29151 放电 class=2 inv=8192 dirs=迅疾+强效 sample=23221 baseF=45256 base_ppm=3.0
+line=232 shell=29162 payload=29164 冥河之握 class=4 inv=16384 dirs=迅疾+强效+延展 sample=23238 baseF=45263 base_ppm=0.0
+line=233 shell=29501 payload=29502 冰霜箭 class=2 inv=32768 dirs=迅疾+强效 sample=2824 baseF=45273 base_ppm=3.0

@@ -1,0 +1,12 @@
+dir=1 rank=1 ench=30220 formula=35260 proc=9632 chance=0
+dir=1 rank=2 ench=30221 formula=35261 proc=9632 chance=8
+dir=1 rank=3 ench=30222 formula=35262 proc=9632 chance=12
+dir=1 rank=4 ench=30223 formula=35263 proc=9632 chance=16
+dir=2 rank=1 ench=30224 formula=35264 proc=9632 chance=0
+dir=2 rank=2 ench=30225 formula=35265 proc=35230 chance=0
+dir=2 rank=3 ench=30226 formula=35266 proc=35231 chance=0
+dir=2 rank=4 ench=30227 formula=35267 proc=35232 chance=0
+dir=3 rank=1 ench=30228 formula=35268 proc=9632 chance=0
+dir=3 rank=2 ench=30229 formula=35269 proc=35240 chance=0
+dir=3 rank=3 ench=30230 formula=35270 proc=35241 chance=0
+dir=3 rank=4 ench=30231 formula=35271 proc=35242 chance=0

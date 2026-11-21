@@ -1,0 +1,9 @@
+dir=1 rank=1 ench=30200 formula=35210 proc=21153 chance=8 icd=0
+dir=1 rank=2 ench=30201 formula=35211 proc=21153 chance=12 icd=0
+dir=1 rank=3 ench=30202 formula=35212 proc=21153 chance=16 icd=0
+dir=2 rank=1 ench=30203 formula=35213 proc=21153 chance=0 icd=40000
+dir=2 rank=2 ench=30204 formula=35214 proc=21153 chance=0 icd=25000
+dir=2 rank=3 ench=30205 formula=35215 proc=21153 chance=0 icd=12000
+dir=3 rank=1 ench=30206 formula=35216 proc=35200 chance=0 icd=0
+dir=3 rank=2 ench=30207 formula=35217 proc=35201 chance=0 icd=0
+dir=3 rank=3 ench=30208 formula=35218 proc=35202 chance=0 icd=0

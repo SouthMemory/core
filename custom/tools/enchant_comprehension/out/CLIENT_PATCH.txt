@@ -1,0 +1,5 @@
+Formula spell IDs start at 35000 (must be <65536; classic learn packet is uint16).
+Use patch-zhCN-ZZ.mpq so it loads AFTER patch-zhCN-Z.mpq (which also ships Spell.dbc).
+
+Client: copy patch-zhCN-ZZ.mpq into Data\zhCN\, remove any older patch-zhCN-9.mpq, restart client.
+Server: same three DBCs in DataDir\dbc (generator --apply-dbc).

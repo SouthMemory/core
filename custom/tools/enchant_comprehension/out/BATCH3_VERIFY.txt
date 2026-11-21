@@ -1,0 +1,7 @@
+Batch3 on-equip PROC — PASSED (2026-11-19)
+
+EQUIP_SPELL applies on-equip aura shell (trinkets/armor work).
+迅疾 uses flat CustomChance 8/12/16 (ppmRate=0); base keeps original PPM.
+HOJ base 34089 -> 15600; 迅疾III 34092 -> 48080 @ 16%.
+
+GM: no further issues after retest.

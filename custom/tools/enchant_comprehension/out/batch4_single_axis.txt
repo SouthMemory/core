@@ -1,0 +1,418 @@
+line=300 aura=7515 防御增强 class=4 inv=512 mag0=3->6 sample=21996 baseF=52000
+line=301 aura=7516 防御增强 class=4 inv=19144 mag0=3->6 sample=9405 baseF=52004
+line=302 aura=7517 防御增强 class=4 inv=2124590 mag0=4->8 sample=10795 baseF=52008
+line=303 aura=7518 防御增强 class=4 inv=2164672 mag0=5->10 sample=868 baseF=52012
+line=304 aura=7540 Increased 1H Axe class=2 inv=8192 mag0=2->4 sample=19921 baseF=52016
+line=305 aura=7546 Increased 1H Mace class=2 inv=8192 mag0=2->4 sample=19908 baseF=52020
+line=306 aura=7552 Increased 2H Axe class=2 inv=131072 mag0=2->4 sample=2907 baseF=52024
+line=307 aura=7560 Increased 2H Mace class=2 inv=131072 mag0=7->14 sample=4548 baseF=52028
+line=308 aura=7569 弓技能提高 class=4 inv=131200 mag0=4->8 sample=17754 baseF=52032
+line=309 aura=7570 弓技能提高 class=4 inv=576 mag0=2->4 sample=18296 baseF=52036
+line=310 aura=7581 枪械技能提高 class=2 inv=67108864 mag0=4->8 sample=16007 baseF=52040
+line=311 aura=7597 Increased Critical 1 class=4 inv=73645806 mag0=1->2 sample=867 baseF=52044
+line=312 aura=7598 Increased Critical 2 class=4 inv=135334 mag0=2->4 sample=9413 baseF=52048
+line=313 aura=7678 Increase Healing 8 class=4 inv=8454144 mag0=9->18 sample=13031 baseF=52052
+line=314 aura=7679 Increase Healing 10 class=2 inv=2105856 mag0=11->22 sample=2816 baseF=52056
+line=315 aura=7680 Increase Healing 12 class=4 inv=8454276 mag0=13->26 sample=2943 baseF=52060
+line=316 aura=7681 Increase Healing 14 class=4 inv=2101060 mag0=15->30 sample=7049 baseF=52064
+line=317 aura=7685 Increase Fire Dam 3 class=4 inv=8388608 mag0=4->8 sample=6898 baseF=52068
+line=318 aura=7686 Increase Fire Dam 3 class=4 inv=8388608 mag0=6->12 sample=2879 baseF=52072
+line=319 aura=7687 Increase Fire Dam 4 class=4 inv=8388608 mag0=7->14 sample=5183 baseF=52076
+line=320 aura=7688 Increase Fire Dam 5 class=4 inv=67109888 mag0=9->18 sample=4331 baseF=52080
+line=321 aura=7689 Increase Fire Dam 6 class=4 inv=8320 mag0=10->20 sample=4317 baseF=52084
+line=322 aura=7701 Increase Frost Dam 4 class=4 inv=32 mag0=7->14 sample=4324 baseF=52088
+line=323 aura=7702 Increase Frost Dam 5 class=2 inv=67108864 mag0=9->18 sample=7514 baseF=52092
+line=324 aura=7703 Increase Frost Dam 6 class=4 inv=67306624 mag0=10->20 sample=2950 baseF=52096
+line=325 aura=7706 Increase Shadow Dam 3 class=4 inv=512 mag0=4->8 sample=10461 baseF=52100
+line=326 aura=7708 Increase Shadow Dam 4 class=4 inv=2 mag0=7->14 sample=4323 baseF=52104
+line=327 aura=7709 Increase Shadow Dam 6 class=4 inv=75497600 mag0=10->20 sample=2277 baseF=52108
+line=328 aura=7710 Increase Shadow Dam 5 class=4 inv=132096 mag0=9->18 sample=7047 baseF=52112
+line=329 aura=7823 钓鱼技能 +5 class=4 inv=131330 mag0=5->10 sample=6365 baseF=52116
+line=330 aura=7825 钓鱼技能 +15 class=2 inv=131072 mag0=15->30 sample=6366 baseF=52120
+line=331 aura=7826 钓鱼技能 +20 class=2 inv=131072 mag0=20->40 sample=6367 baseF=52124
+line=332 aura=8082 钓鱼技能 +25 class=2 inv=131072 mag0=25->50 sample=19022 baseF=52128
+line=333 aura=8747 游泳速度 class=4 inv=64 mag0=15->30 sample=7052 baseF=52132
+line=334 aura=9132 Increased Critical 1 class=4 inv=1024 mag0=1->2 sample=7348 baseF=52136
+line=335 aura=9133 开锁 class=4 inv=1024 mag0=5->10 sample=4248 baseF=52140
+line=336 aura=9134 草药学 class=4 inv=1024 mag0=5->10 sample=7349 baseF=52144
+line=337 aura=9139 Attack Power 08 class=2 inv=67117568 mag0=8->16 sample=4825 baseF=52148
+line=338 aura=9140 Attack Power 10 class=2 inv=69279744 mag0=10->20 sample=9378 baseF=52152
+line=339 aura=9141 Attack Power 12 class=4 inv=8266 mag0=12->24 sample=5191 baseF=52156
+line=340 aura=9142 Attack Power 14 class=4 inv=67143168 mag0=14->28 sample=9640 baseF=52160
+line=341 aura=9294 Increase Fire Dam 9 class=4 inv=8388608 mag0=16->32 sample=18762 baseF=52164
+line=342 aura=9295 Increase Fire Dam 10 class=4 inv=75008 mag0=17->34 sample=12113 baseF=52168
+line=343 aura=9296 Increase Fire Dam 11 class=4 inv=131200 mag0=19->38 sample=12256 baseF=52172
+line=344 aura=9298 Increase Fire Dam 13 class=4 inv=65792 mag0=21->42 sample=10044 baseF=52176
+line=345 aura=9304 Increase Frost Dam 9 class=2 inv=67108864 mag0=16->32 sample=19108 baseF=52180
+line=346 aura=9305 Increase Frost Dam 10 class=4 inv=1024 mag0=17->34 sample=18693 baseF=52184
+line=347 aura=9306 Increase Frost Dam 11 class=4 inv=256 mag0=19->38 sample=18307 baseF=52188
+line=348 aura=9307 Increase Frost Dam 12 class=2 inv=67108928 mag0=20->40 sample=19130 baseF=52192
+line=349 aura=9308 Increase Frost Dam 13 class=4 inv=3072 mag0=21->42 sample=942 baseF=52196
+line=350 aura=9314 Increase Healing 22 class=4 inv=197184 mag0=24->48 sample=2271 baseF=52200
+line=351 aura=9315 Increase Healing 24 class=4 inv=10561004 mag0=26->52 sample=13206 baseF=52204
+line=352 aura=9316 Increase Healing 26 class=4 inv=2952 mag0=29->58 sample=16902 baseF=52208
+line=353 aura=9317 Increase Healing 28 class=4 inv=10553870 mag0=31->62 sample=11923 baseF=52212
+line=354 aura=9318 Increase Healing 30 class=4 inv=71462 mag0=33->66 sample=2721 baseF=52216
+line=355 aura=9325 Increase Shadow Dam 10 class=4 inv=8389640 mag0=17->34 sample=10023 baseF=52220
+line=356 aura=9326 Increase Shadow Dam 11 class=2 inv=2229248 mag0=19->38 sample=13349 baseF=52224
+line=357 aura=9327 Increase Shadow Dam 12 class=4 inv=1028 mag0=20->40 sample=18691 baseF=52228
+line=358 aura=9328 Increase Shadow Dam 13 class=4 inv=1179776 mag0=21->42 sample=2549 baseF=52232
+line=359 aura=9329 Attack Power 16 class=4 inv=74818 mag0=16->32 sample=3341 baseF=52236
+line=360 aura=9330 Attack Power 18 class=4 inv=8716 mag0=18->36 sample=19095 baseF=52240
+line=361 aura=9331 Attack Power 20 class=4 inv=67353900 mag0=20->40 sample=2262 baseF=52244
+line=362 aura=9332 Attack Power 22 class=4 inv=173352 mag0=22->44 sample=10784 baseF=52248
+line=363 aura=9333 Attack Power 48 class=4 inv=2048 mag0=48->96 sample=19384 baseF=52252
+line=364 aura=9334 Attack Power 26 class=4 inv=139424 mag0=26->52 sample=16425 baseF=52256
+line=365 aura=9335 Attack Power 28 class=4 inv=69281632 mag0=28->56 sample=10823 baseF=52260
+line=366 aura=9336 Attack Power 30 class=4 inv=67183436 mag0=30->60 sample=11686 baseF=52264
+line=367 aura=9342 Increase Spell Dam 6 class=4 inv=11538278 mag0=13->26 sample=4329 baseF=52268
+line=368 aura=9343 Increase Spell Dam 7 class=4 inv=3353582 mag0=14->28 sample=7054 baseF=52272
+line=369 aura=9344 Increase Spell Dam 8 class=4 inv=133036 mag0=15->30 sample=10003 baseF=52276
+line=370 aura=9345 Increase Spell Dam 16 class=4 inv=3147758 mag0=16->32 sample=13344 baseF=52280
+line=371 aura=9346 Increase Spell Dam 9 class=4 inv=76746222 mag0=18->36 sample=10019 baseF=52284
+line=372 aura=9358 Increase Nature Dam 10 class=4 inv=4 mag0=17->34 sample=18289 baseF=52288
+line=373 aura=9359 Increase Nature Dam 11 class=2 inv=131072 mag0=19->38 sample=1998 baseF=52292
+line=374 aura=9361 Increase Nature Dam 13 class=4 inv=1024 mag0=21->42 sample=2564 baseF=52296
+line=375 aura=9395 Increase Spell Dam 2 class=4 inv=67111688 mag0=5->10 sample=9454 baseF=52300
+line=376 aura=9396 Increase Spell Dam 3 class=4 inv=67118856 mag0=6->12 sample=892 baseF=52304
+line=377 aura=9397 Increase Spell Dam 4 class=4 inv=8391500 mag0=7->14 sample=862 baseF=52308
+line=378 aura=9398 Increase Spell Dam 4 class=4 inv=3146508 mag0=8->16 sample=11784 baseF=52312
+line=379 aura=9400 Increase Fire Dam 8 class=4 inv=75563200 mag0=13->26 sample=2565 baseF=52316
+line=380 aura=9401 Increase Fire Dam 8 class=4 inv=8389704 mag0=14->28 sample=7064 baseF=52320
+line=381 aura=9402 Increase Frost Dam 7 class=4 inv=8454144 mag0=11->22 sample=1992 baseF=52324
+line=382 aura=9403 Increase Frost Dam 8 class=4 inv=8 mag0=13->26 sample=7060 baseF=52328
+line=383 aura=9404 Increase Frost Dam 8 class=4 inv=2048 mag0=14->28 sample=18679 baseF=52332
+line=384 aura=9406 Increase Healing 16 class=4 inv=67404 mag0=18->36 sample=16811 baseF=52336
+line=385 aura=9407 Increase Healing 18 class=4 inv=1288 mag0=20->40 sample=13184 baseF=52340
+line=386 aura=9408 Increase Healing 20 class=4 inv=76750378 mag0=22->44 sample=9393 baseF=52344
+line=387 aura=9411 Increase Nature Dam 8 class=2 inv=131072 mag0=14->28 sample=1720 baseF=52348
+line=388 aura=9412 Increase Shadow Dam 7 class=2 inv=67239936 mag0=11->22 sample=1484 baseF=52352
+line=389 aura=9413 Increase Shadow Dam 8 class=4 inv=12 mag0=13->26 sample=14538 baseF=52356
+line=390 aura=9414 Increase Shadow Dam 8 class=4 inv=75499778 mag0=14->28 sample=1980 baseF=52360
+line=391 aura=9415 Increase Spell Dam 5 class=4 inv=75574988 mag0=9->18 sample=7714 baseF=52364
+line=392 aura=9416 Increase Spell Dam 5 class=4 inv=75566538 mag0=11->22 sample=2620 baseF=52368
+line=393 aura=9417 Increase Spell Dam 6 class=4 inv=78716910 mag0=12->24 sample=7685 baseF=52372
+line=394 aura=12418 侦测潜行 class=4 inv=2 mag0=18->36 sample=10501 baseF=52376
+line=395 aura=12560 采矿 class=4 inv=2 mag0=5->10 sample=10542 baseF=52380
+line=396 aura=12956 魔甲术 class=4 inv=4096 mag0=3->6 sample=10779 baseF=52384
+line=397 aura=13383 防御增强 class=4 inv=2100612 mag0=5->10 sample=16862 baseF=52388
+line=398 aura=13384 防御增强 class=4 inv=85422 mag0=6->12 sample=13074 baseF=52392
+line=399 aura=13385 防御增强 class=4 inv=4263022 mag0=7->14 sample=12939 baseF=52396
+line=400 aura=13386 防御增强 class=4 inv=16386 mag0=7->14 sample=11746 baseF=52400
+line=401 aura=13387 防御增强 class=4 inv=131298 mag0=8->16 sample=12115 baseF=52404
+line=402 aura=13388 防御增强 class=4 inv=134574 mag0=9->18 sample=12618 baseF=52408
+line=403 aura=13389 防御增强 class=4 inv=32 mag0=17->34 sample=14624 baseF=52412
+line=404 aura=13390 防御增强 class=4 inv=148652 mag0=10->20 sample=943 baseF=52416
+line=405 aura=13587 坐骑速度 class=4 inv=4096 mag0=3->6 sample=11122 baseF=52420
+line=406 aura=13595 Increase Arcane Dam 5 class=2 inv=67108864 mag0=9->18 sample=11263 baseF=52424
+line=407 aura=13597 Increase Arcane Dam 7 class=4 inv=512 mag0=11->22 sample=18337 baseF=52428
+line=408 aura=13599 Increase Arcane Dam 8 class=2 inv=131072 mag0=14->28 sample=7757 baseF=52432
+line=409 aura=13601 Increase Arcane Dam 9 class=2 inv=67108864 mag0=16->32 sample=18338 baseF=52436
+line=410 aura=13665 Increased Parry 1 class=4 inv=145090 mag0=1->2 sample=9379 baseF=52440
+line=411 aura=13667 Increased Parry 2 class=2 inv=131072 mag0=2->4 sample=19354 baseF=52444
+line=412 aura=13669 Increased Dodge 1 class=4 inv=73198 mag0=1->2 sample=4130 baseF=52448
+line=413 aura=13670 Increased Dodge 2 class=4 inv=70050 mag0=2->4 sample=10845 baseF=52452
+line=414 aura=13674 Increased Block 1 class=4 inv=16384 mag0=1->2 sample=4975 baseF=52456
+line=415 aura=13675 Increased Block 2 class=4 inv=19464 mag0=2->4 sample=2040 baseF=52460
+line=416 aura=13676 Increased Block 3 class=4 inv=96 mag0=3->6 sample=16865 baseF=52464
+line=417 aura=13830 Increase Fire Dam 17 class=4 inv=256 mag0=29->58 sample=13369 baseF=52468
+line=418 aura=13831 Increase Frost Dam 17 class=4 inv=8 mag0=29->58 sample=11782 baseF=52472
+line=419 aura=13881 Increase Spell Dam 22 class=4 inv=137408 mag0=29->58 sample=12930 baseF=52476
+line=420 aura=14027 Attack Power 24 class=4 inv=67218244 mag0=24->48 sample=11862 baseF=52480
+line=421 aura=14047 Increase Spell Dam 12 class=4 inv=1122274 mag0=23->46 sample=9484 baseF=52484
+line=422 aura=14049 Attack Power 40 class=4 inv=4271466 mag0=40->80 sample=13210 baseF=52488
+line=423 aura=14052 Attack Power 60 class=4 inv=96 mag0=60->120 sample=14637 baseF=52492
+line=424 aura=14054 Increase Spell Dam 14 class=4 inv=1181574 mag0=27->54 sample=15999 baseF=52496
+line=425 aura=14055 Increase Spell Dam 18 class=4 inv=66 mag0=35->70 sample=19375 baseF=52500
+line=426 aura=14056 Attack Power 50 class=4 inv=65568 mag0=50->100 sample=12603 baseF=52504
+line=427 aura=14089 Attack Power 36 class=2 inv=8194 mag0=36->72 sample=17767 baseF=52508
+line=428 aura=14098 Demon Slaying 117 class=2 inv=131072 mag0=117->234 sample=19963 baseF=52512
+line=429 aura=14127 Increase Spell Dam 21 class=4 inv=8457198 mag0=28->56 sample=17571 baseF=52516
+line=430 aura=14248 Increase Spell Dam 11 class=4 inv=9636842 mag0=21->42 sample=9434 baseF=52520
+line=431 aura=14249 防御增强 class=4 inv=32 mag0=13->26 sample=22416 baseF=52524
+line=432 aura=14254 Increase Spell Dam 11 class=4 inv=69341128 mag0=19->38 sample=12965 baseF=52528
+line=433 aura=14565 Beast Slaying 30 class=4 inv=2098208 mag0=30->60 sample=3566 baseF=52532
+line=434 aura=14716 Increased Arcane Resist 14 class=4 inv=128 mag0=14->28 sample=16165 baseF=52536
+line=435 aura=14794 Increase Shadow Dam 14 class=4 inv=2 mag0=24->48 sample=10025 baseF=52540
+line=436 aura=14798 Increase Spell Dam 15 class=4 inv=1255818 mag0=30->60 sample=16442 baseF=52544
+line=437 aura=14799 Increase Spell Dam 20 class=4 inv=11749322 mag0=20->40 sample=1664 baseF=52548
+line=438 aura=14803 Increased Armor 200 class=4 inv=4096 mag0=200->400 sample=18466 baseF=52552
+line=439 aura=14824 加速术 class=11 inv=262144 mag0=10->20 sample=2101 baseF=52556
+line=440 aura=14825 加速术 class=11 inv=262144 mag0=11->22 sample=3604 baseF=52560
+line=441 aura=14826 加速术 class=11 inv=262144 mag0=12->24 sample=7371 baseF=52564
+line=442 aura=14827 加速术 class=11 inv=262144 mag0=13->26 sample=8217 baseF=52568
+line=443 aura=14828 加速术 class=11 inv=262144 mag0=14->28 sample=2662 baseF=52572
+line=444 aura=14829 加速术 class=11 inv=262144 mag0=15->30 sample=18714 baseF=52576
+line=445 aura=15438 荆棘术 class=4 inv=18432 mag0=3->6 sample=11669 baseF=52580
+line=446 aura=15464 Increased Hit Chance 1 class=4 inv=69447662 mag0=1->2 sample=10837 baseF=52584
+line=447 aura=15465 Increased Hit Chance 2 class=4 inv=138410 mag0=2->4 sample=12082 baseF=52588
+line=448 aura=15466 Increased Hit Chance 3 class=2 inv=131072 mag0=3->6 sample=13052 baseF=52592
+line=449 aura=15693 Increased Armor 150 class=4 inv=4096 mag0=150->300 sample=18472 baseF=52596
+line=450 aura=15696 Increase Healing 48 class=4 inv=8523332 mag0=53->106 sample=11932 baseF=52600
+line=451 aura=15714 Increase Spell Dam 11 class=4 inv=1183620 mag0=22->44 sample=1716 baseF=52604
+line=452 aura=15715 Increase Spell Dam 12 class=4 inv=9441260 mag0=25->50 sample=16444 baseF=52608
+line=453 aura=15717 匕首技能提高 class=2 inv=4194306 mag0=6->12 sample=18392 baseF=52612
+line=454 aura=15760 Increased 1H Mace class=2 inv=8192 mag0=4->8 sample=21837 baseF=52616
+line=455 aura=15763 Increased 1H Sword class=2 inv=8192 mag0=6->12 sample=23577 baseF=52620
+line=456 aura=15768 Increased 2H Axe class=2 inv=131072 mag0=10->20 sample=12775 baseF=52624
+line=457 aura=15771 Increased 2H Sword class=2 inv=131072 mag0=8->16 sample=18822 baseF=52628
+line=458 aura=15776 匕首技能提高 class=2 inv=8192 mag0=4->8 sample=12062 baseF=52632
+line=459 aura=15806 Attack Power 34 class=4 inv=198272 mag0=34->68 sample=4983 baseF=52636
+line=460 aura=15807 Attack Power 32 class=4 inv=9798 mag0=32->64 sample=7724 baseF=52640
+line=461 aura=15808 Attack Power 38 class=4 inv=140802 mag0=38->76 sample=10570 baseF=52644
+line=462 aura=15809 Attack Power 42 class=4 inv=1092 mag0=42->84 sample=18544 baseF=52648
+line=463 aura=15810 Attack Power 44 class=4 inv=132416 mag0=44->88 sample=12634 baseF=52652
+line=464 aura=15811 Attack Power 46 class=4 inv=136 mag0=46->92 sample=15062 baseF=52656
+line=465 aura=15812 Attack Power 52 class=4 inv=128 mag0=52->104 sample=14638 baseF=52660
+line=466 aura=15813 Attack Power 54 class=4 inv=131200 mag0=54->108 sample=15052 baseF=52664
+line=467 aura=15814 Attack Power 56 class=4 inv=4128 mag0=56->112 sample=14536 baseF=52668
+line=468 aura=15815 Attack Power 58 class=4 inv=32 mag0=58->116 sample=19904 baseF=52672
+line=469 aura=15816 Attack Power 62 class=2 inv=131200 mag0=62->124 sample=12784 baseF=52676
+line=470 aura=15817 Attack Power 64 class=4 inv=4160 mag0=64->128 sample=21586 baseF=52680
+line=471 aura=15821 Attack Power 72 class=2 inv=131072 mag0=72->144 sample=19854 baseF=52684
+line=472 aura=15824 Attack Power 76 class=4 inv=32 mag0=76->152 sample=22191 baseF=52688
+line=473 aura=15829 Attack Power 86 class=2 inv=131072 mag0=86->172 sample=19364 baseF=52692
+line=474 aura=15874 Increased 1H Axe class=4 inv=1026 mag0=7->14 sample=9375 baseF=52696
+line=475 aura=15956 钓鱼技能 +3 class=2 inv=131072 mag0=3->6 sample=12225 baseF=52700
+line=476 aura=16638 Increase Nature Dam 20 class=4 inv=32 mag0=34->68 sample=12624 baseF=52704
+line=477 aura=16718 芬克的剥皮刀 class=2 inv=2097152 mag0=10->20 sample=12709 baseF=52708
+line=478 aura=17178 Alex's Audacity class=4 inv=2048 mag0=1000->2000 sample=12947 baseF=52712
+line=479 aura=17280 Increase Spell Dam 43 class=4 inv=128 mag0=43->86 sample=19165 baseF=52716
+line=480 aura=17319 Undead Slayer 81 class=4 inv=32 mag0=81->162 sample=23087 baseF=52720
+line=481 aura=17320 Increase Healing 76 class=2 inv=131072 mag0=84->168 sample=20581 baseF=52724
+line=482 aura=17367 Increase Spell Dam 16 class=4 inv=3277218 mag0=32->64 sample=16955 baseF=52728
+line=483 aura=17371 Increase Healing 30 class=4 inv=4238 mag0=44->88 sample=12625 baseF=52732
+line=484 aura=17482 Beast Slaying 48 class=4 inv=4 mag0=48->96 sample=13212 baseF=52736
+line=485 aura=17493 Increase Spell Dam 22 class=4 inv=1052800 mag0=44->88 sample=19379 baseF=52740
+line=486 aura=17623 往日的幻象 class=4 inv=4096 mag0=1000->2000 sample=13544 baseF=52744
+line=487 aura=17746 Stealth 5 class=4 inv=256 mag0=5->10 sample=8197 baseF=52748
+line=488 aura=17747 Increase Fire Dam 13 class=4 inv=1049600 mag0=23->46 sample=2231 baseF=52752
+line=489 aura=17818 弓技能提高 class=4 inv=1024 mag0=8->16 sample=13255 baseF=52756
+line=490 aura=17819 Increase Nature Dam 17 class=4 inv=64 mag0=29->58 sample=18676 baseF=52760
+line=491 aura=17829 Increase Arcane Dam 20 class=4 inv=8388608 mag0=34->68 sample=19308 baseF=52764
+line=492 aura=17830 Increase Arcane Dam 21 class=4 inv=128 mag0=36->72 sample=18545 baseF=52768
+line=493 aura=17866 Increase Fire Dam 14 class=4 inv=2080 mag0=24->48 sample=12926 baseF=52772
+line=494 aura=17867 Increase Fire Dam 15 class=4 inv=1048704 mag0=26->52 sample=14045 baseF=52776
+line=495 aura=17868 Increase Fire Dam 16 class=4 inv=1048576 mag0=27->54 sample=10042 baseF=52780
+line=496 aura=17871 Increase Fire Dam 19 class=4 inv=1032 mag0=33->66 sample=18408 baseF=52784
+line=497 aura=17872 Increase Fire Dam 20 class=4 inv=2048 mag0=34->68 sample=23237 baseF=52788
+line=498 aura=17873 Increase Fire Dam 21 class=2 inv=131072 mag0=36->72 sample=944 baseF=52792
+line=499 aura=17875 Increase Fire Dam 24 class=4 inv=8388608 mag0=40->80 sample=19311 baseF=52796
+line=500 aura=17878 Increase Fire Dam 25 class=4 inv=2 mag0=43->86 sample=3075 baseF=52800
+line=501 aura=17890 Increase Frost Dam 14 class=4 inv=1048608 mag0=24->48 sample=13868 baseF=52804
+line=502 aura=17891 Increase Frost Dam 15 class=4 inv=128 mag0=26->52 sample=13871 baseF=52808
+line=503 aura=17896 Increase Frost Dam 20 class=4 inv=8388608 mag0=34->68 sample=19310 baseF=52812
+line=504 aura=17899 Increase Frost Dam 23 class=4 inv=1048576 mag0=39->78 sample=21527 baseF=52816
+line=505 aura=17900 Increase Frost Dam 24 class=4 inv=256 mag0=40->80 sample=19438 baseF=52820
+line=506 aura=17901 Increase Frost Dam 24 class=4 inv=2 mag0=41->82 sample=19105 baseF=52824
+line=507 aura=17902 Increase Frost Dam 25 class=4 inv=1048576 mag0=43->86 sample=14340 baseF=52828
+line=508 aura=17993 Increase Nature Dam 19 class=2 inv=131072 mag0=33->66 sample=9482 baseF=52832
+line=509 aura=17997 Increase Nature Dam 24 class=4 inv=8 mag0=40->80 sample=18829 baseF=52836
+line=510 aura=18008 Increase Shadow Dam 15 class=4 inv=136 mag0=26->52 sample=14107 baseF=52840
+line=511 aura=18009 Increase Shadow Dam 16 class=4 inv=256 mag0=27->54 sample=18735 baseF=52844
+line=512 aura=18011 Increase Shadow Dam 18 class=4 inv=2 mag0=30->60 sample=14111 baseF=52848
+line=513 aura=18013 Increase Shadow Dam 19 class=4 inv=3136 mag0=33->66 sample=18407 baseF=52852
+line=514 aura=18014 Increase Shadow Dam 20 class=4 inv=8388736 mag0=34->68 sample=19309 baseF=52856
+line=515 aura=18015 Increase Shadow Dam 21 class=4 inv=1048576 mag0=36->72 sample=14106 baseF=52860
+line=516 aura=18018 Increase Shadow Dam 24 class=4 inv=1048576 mag0=40->80 sample=14136 baseF=52864
+line=517 aura=18020 Increase Shadow Dam 25 class=4 inv=1024 mag0=43->86 sample=19407 baseF=52868
+line=518 aura=18029 Increase Healing 32 class=4 inv=148930 mag0=35->70 sample=12633 baseF=52872
+line=519 aura=18030 Increase Healing 34 class=4 inv=10505608 mag0=37->74 sample=13954 baseF=52876
+line=520 aura=18031 Increase Healing 36 class=4 inv=67266 mag0=40->80 sample=11841 baseF=52880
+line=521 aura=18032 Increase Healing 38 class=4 inv=66890 mag0=42->84 sample=16899 baseF=52884
+line=522 aura=18033 Increase Healing 42 class=4 inv=133508 mag0=46->92 sample=16922 baseF=52888
+line=523 aura=18034 Increase Healing 44 class=4 inv=65730 mag0=48->96 sample=16901 baseF=52892
+line=524 aura=18035 Increase Healing 46 class=4 inv=10489032 mag0=51->102 sample=18527 baseF=52896
+line=525 aura=18036 Increase Healing 50 class=4 inv=2146 mag0=55->110 sample=21609 baseF=52900
+line=526 aura=18037 Increase Healing 52 class=4 inv=1048580 mag0=57->114 sample=16923 baseF=52904
+line=527 aura=18038 Increase Healing 54 class=4 inv=1250 mag0=59->118 sample=20264 baseF=52908
+line=528 aura=18039 Increase Healing 56 class=4 inv=8388936 mag0=62->124 sample=18810 baseF=52912
+line=529 aura=18040 Increase Healing 58 class=4 inv=1048578 mag0=64->128 sample=20628 baseF=52916
+line=530 aura=18041 Increase Healing 60 class=4 inv=135330 mag0=66->132 sample=15047 baseF=52920
+line=531 aura=18042 Increase Healing 62 class=4 inv=1048706 mag0=68->136 sample=13346 baseF=52924
+line=532 aura=18043 Increase Healing 64 class=4 inv=1052672 mag0=70->140 sample=21663 baseF=52928
+line=533 aura=18044 Increase Healing 66 class=4 inv=1048576 mag0=73->146 sample=14154 baseF=52932
+line=534 aura=18045 Increase Healing 68 class=4 inv=2 mag0=75->150 sample=22514 baseF=52936
+line=535 aura=18046 Increase Healing 70 class=4 inv=128 mag0=77->154 sample=19385 baseF=52940
+line=536 aura=18049 Increase Spell Dam 13 class=4 inv=8588682 mag0=26->52 sample=873 baseF=52944
+line=537 aura=18050 Increase Spell Dam 16 class=4 inv=11536514 mag0=33->66 sample=17602 baseF=52948
+line=538 aura=18052 Increase Spell Dam 17 class=4 inv=131564 mag0=34->68 sample=13170 baseF=52952
+line=539 aura=18053 Increase Spell Dam 18 class=4 inv=1051786 mag0=36->72 sample=21351 baseF=52956
+line=540 aura=18054 Increase Spell Dam 19 class=4 inv=1051776 mag0=37->74 sample=17579 baseF=52960
+line=541 aura=18055 Increase Spell Dam 19 class=4 inv=1048712 mag0=39->78 sample=16930 baseF=52964
+line=542 aura=18056 Increase Spell Dam 20 class=4 inv=3280896 mag0=40->80 sample=14152 baseF=52968
+line=543 aura=18057 Increase Spell Dam 21 class=4 inv=1048706 mag0=41->82 sample=19886 baseF=52972
+line=544 aura=18074 Undead Slayer 30 class=2 inv=2097152 mag0=30->60 sample=10805 baseF=52976
+line=545 aura=18076 Beast Slaying 72 class=2 inv=131072 mag0=72->144 sample=11907 baseF=52980
+line=546 aura=18079 Demon Slaying 33 class=2 inv=2105344 mag0=33->66 sample=10696 baseF=52984
+line=547 aura=18087 Demon Slaying 78 class=2 inv=131072 mag0=78->156 sample=10698 baseF=52988
+line=548 aura=18098 Undead Slayer 45 class=4 inv=8704 mag0=45->90 sample=18758 baseF=52992
+line=549 aura=18185 防御增强 class=4 inv=2097186 mag0=11->22 sample=16963 baseF=52996
+line=550 aura=18196 防御增强 class=4 inv=128 mag0=15->30 sample=11927 baseF=53000
+line=551 aura=18198 Undead Slayer 66 class=2 inv=131072 mag0=66->132 sample=13017 baseF=53004
+line=552 aura=18201 Beast Slaying 24 class=2 inv=67141632 mag0=24->48 sample=11628 baseF=53008
+line=553 aura=18207 Beast Slaying 60 class=2 inv=131072 mag0=60->120 sample=7710 baseF=53012
+line=554 aura=18212 Demon Slaying 99 class=2 inv=131072 mag0=99->198 sample=13044 baseF=53016
+line=555 aura=18369 防御增强 class=4 inv=16482 mag0=9->18 sample=1717 baseF=53020
+line=556 aura=18378 法力回复提高 class=4 inv=137376 mag0=8->16 sample=14141 baseF=53024
+line=557 aura=18379 法力回复提高 class=4 inv=20324 mag0=6->12 sample=14142 baseF=53028
+line=558 aura=18382 Increased Critical Spell class=4 inv=1184898 mag0=2->4 sample=12752 baseF=53032
+line=559 aura=18384 Increased Critical Spell class=4 inv=78868462 mag0=1->2 sample=5522 baseF=53036
+line=560 aura=18676 Increased All Resist 05 class=4 inv=64 mag0=5->10 sample=22197 baseF=53040
+line=561 aura=18985 抵抗沉默 class=4 inv=2048 mag0=5->10 sample=18345 baseF=53044
+line=562 aura=19380 Beast Slaying 33 class=2 inv=8192 mag0=33->66 sample=15782 baseF=53048
+line=563 aura=19691 Beast Slaying 18 class=2 inv=73728 mag0=18->36 sample=1465 baseF=53052
+line=564 aura=19786 抵抗沉默 class=4 inv=4 mag0=7->14 sample=16009 baseF=53056
+line=565 aura=20732 Attack Power 15 class=2 inv=8192 mag0=15->30 sample=16886 baseF=53060
+line=566 aura=20885 活力 class=4 inv=6144 mag0=8->16 sample=17904 baseF=53064
+line=567 aura=20886 Thorns Dmg +3 class=4 inv=1024 mag0=3->6 sample=18326 baseF=53068
+line=568 aura=20959 法力回复提高 class=4 inv=1048576 mag0=10->20 sample=18532 baseF=53072
+line=569 aura=21142 献祭 class=4 inv=196608 mag0=5->10 sample=3475 baseF=53076
+line=570 aura=21346 活力 class=4 inv=5120 mag0=2->4 sample=17770 baseF=53080
+line=571 aura=21347 活力 class=4 inv=82954 mag0=4->8 sample=16928 baseF=53084
+line=572 aura=21348 活力 class=4 inv=8390656 mag0=6->12 sample=18602 baseF=53088
+line=573 aura=21361 法力回复提高 class=2 inv=69347844 mag0=3->6 sample=9448 baseF=53092
+line=574 aura=21362 法力回复提高 class=4 inv=2098756 mag0=4->8 sample=13244 baseF=53096
+line=575 aura=21363 法力回复提高 class=4 inv=67189928 mag0=5->10 sample=10659 baseF=53100
+line=576 aura=21364 法力回复提高 class=2 inv=1179654 mag0=7->14 sample=18308 baseF=53104
+line=577 aura=21365 法力回复提高 class=4 inv=147974 mag0=9->18 sample=17106 baseF=53108
+line=578 aura=21366 法力回复提高 class=4 inv=4096 mag0=11->22 sample=18371 baseF=53112
+line=579 aura=21409 防御增强 class=4 inv=128 mag0=13->26 sample=22417 baseF=53116
+line=580 aura=21431 Attack Power Ranged 14 class=2 inv=67108864 mag0=14->28 sample=10510 baseF=53120
+line=581 aura=21432 Attack Power Ranged 17 class=2 inv=67108864 mag0=17->34 sample=15995 baseF=53124
+line=582 aura=21433 Attack Power Ranged 19 class=2 inv=67108864 mag0=19->38 sample=17717 baseF=53128
+line=583 aura=21434 Attack Power Ranged 22 class=2 inv=67108864 mag0=22->44 sample=18282 baseF=53132
+line=584 aura=21438 Attack Power Ranged 31 class=2 inv=67108864 mag0=31->62 sample=21272 baseF=53136
+line=585 aura=21439 Attack Power Ranged 34 class=4 inv=512 mag0=34->68 sample=19833 baseF=53140
+line=586 aura=21440 Attack Power Ranged 36 class=2 inv=67141632 mag0=36->72 sample=18833 baseF=53144
+line=587 aura=21442 Attack Power Ranged 41 class=4 inv=512 mag0=41->82 sample=18508 baseF=53148
+line=588 aura=21445 Attack Power Ranged 48 class=4 inv=4096 mag0=48->96 sample=18473 baseF=53152
+line=589 aura=21473 Increased Block 2 class=4 inv=16384 mag0=2->4 sample=22198 baseF=53156
+line=590 aura=21475 Increased Block 3 class=4 inv=20480 mag0=3->6 sample=23040 baseF=53160
+line=591 aura=21476 Increased Block 3 class=4 inv=16384 mag0=3->6 sample=21269 baseF=53164
+line=592 aura=21477 Increased Block 3 class=4 inv=4 mag0=3->6 sample=22981 baseF=53168
+line=593 aura=21485 Increased Block 5 class=4 inv=4096 mag0=5->10 sample=19431 baseF=53172
+line=594 aura=21509 Increase Holy Dam 11 class=2 inv=131072 mag0=16->32 sample=20504 baseF=53176
+line=595 aura=21518 Increase Holy Dam 22 class=4 inv=1048576 mag0=29->58 sample=17741 baseF=53180
+line=596 aura=21593 活力 class=4 inv=4096 mag0=3->6 sample=21568 baseF=53184
+line=597 aura=21595 活力 class=4 inv=65536 mag0=4->8 sample=20579 baseF=53188
+line=598 aura=21596 活力 class=4 inv=6208 mag0=5->10 sample=13387 baseF=53192
+line=599 aura=21598 活力 class=4 inv=67584 mag0=6->12 sample=18315 baseF=53196
+line=600 aura=21599 活力 class=4 inv=4096 mag0=6->12 sample=21567 baseF=53200
+line=601 aura=21600 活力 class=4 inv=4096 mag0=7->14 sample=17903 baseF=53204
+line=602 aura=21601 活力 class=4 inv=130 mag0=7->14 sample=18298 baseF=53208
+line=603 aura=21618 法力回复提高 class=4 inv=2312040 mag0=4->8 sample=12637 baseF=53212
+line=604 aura=21619 法力回复提高 class=4 inv=67111178 mag0=4->8 sample=16854 baseF=53216
+line=605 aura=21620 法力回复提高 class=4 inv=2048 mag0=5->10 sample=18103 baseF=53220
+line=606 aura=21623 法力回复提高 class=2 inv=2097152 mag0=2->4 sample=17710 baseF=53224
+line=607 aura=21624 法力回复提高 class=4 inv=67109632 mag0=2->4 sample=16819 baseF=53228
+line=608 aura=21625 法力回复提高 class=4 inv=3147200 mag0=3->6 sample=11634 baseF=53232
+line=609 aura=21626 法力回复提高 class=4 inv=8588778 mag0=6->12 sample=13216 baseF=53236
+line=610 aura=21627 法力回复提高 class=4 inv=65664 mag0=6->12 sample=14545 baseF=53240
+line=611 aura=21628 法力回复提高 class=4 inv=64 mag0=7->14 sample=20217 baseF=53244
+line=612 aura=21629 法力回复提高 class=4 inv=8520908 mag0=8->16 sample=18104 baseF=53248
+line=613 aura=21631 法力回复提高 class=4 inv=8 mag0=9->18 sample=19373 baseF=53252
+line=614 aura=21632 法力回复提高 class=4 inv=8526208 mag0=10->20 sample=13383 baseF=53256
+line=615 aura=21636 法力回复提高 class=2 inv=131328 mag0=12->24 sample=17113 baseF=53260
+line=616 aura=21640 法力回复提高 class=4 inv=128 mag0=14->28 sample=18872 baseF=53264
+line=617 aura=21958 坚定之心 class=4 inv=4096 mag0=1->2 sample=17759 baseF=53268
+line=618 aura=21991 束缚坠饰 class=4 inv=4 mag0=4->8 sample=17782 baseF=53272
+line=619 aura=22188 弩技能提高 class=2 inv=67108864 mag0=4->8 sample=18388 baseF=53276
+line=620 aura=22683 奥妮克希亚鳞片披风 class=4 inv=65536 mag0=1->2 sample=15138 baseF=53280
+line=621 aura=22778 断筋怒气减少 class=4 inv=1024 mag0=-30->-60 sample=16406 baseF=53284
+line=622 aura=22801 幽灵狼速度 class=4 inv=256 mag0=15->30 sample=16573 baseF=53288
+line=623 aura=22836 Elemental Slaying 36 class=2 inv=8192 mag0=36->72 sample=18310 baseF=53292
+line=624 aura=22849 Increase Spell Dam Undead 22 class=4 inv=1152 mag0=35->70 sample=18346 baseF=53296
+line=625 aura=22852 Block Value 23 class=4 inv=16384 mag0=23->46 sample=18352 baseF=53300
+line=626 aura=22855 Increased Imp Firebolt Damage class=4 inv=4096 mag0=8->16 sample=18354 baseF=53304
+line=627 aura=22912 Block Value 18 class=4 inv=64 mag0=18->36 sample=22422 baseF=53308
+line=628 aura=22988 伊利丹之怒 class=2 inv=8192 mag0=1400->2800 sample=18582 baseF=53312
+line=629 aura=23037 Mana Shield Absorb Increase class=4 inv=1024 mag0=285->570 sample=16391 baseF=53316
+line=630 aura=23043 Mind Blast Cast Pushback Reduction class=4 inv=1024 mag0=50->100 sample=17596 baseF=53320
+line=631 aura=23046 Searing Pain Cast Pushback Reduction class=4 inv=1024 mag0=50->100 sample=17564 baseF=53324
+line=632 aura=23049 Sprint Duration Increase class=4 inv=256 mag0=3000->6000 sample=16392 baseF=53328
+line=633 aura=23101 神圣之眼 class=4 inv=4096 mag0=1000->2000 sample=18646 baseF=53332
+line=634 aura=23157 Arcane Shot Mana Reduction class=4 inv=1024 mag0=-15->-30 sample=16403 baseF=53336
+line=635 aura=23172 Block Value 10 class=4 inv=16384 mag0=10->20 sample=18673 baseF=53340
+line=636 aura=23181 Block Value 24 class=4 inv=16384 mag0=24->48 sample=18696 baseF=53344
+line=637 aura=23210 活力 class=4 inv=4096 mag0=16->32 sample=17082 baseF=53348
+line=638 aura=23212 法力回复提高 class=4 inv=4096 mag0=16->32 sample=17064 baseF=53352
+line=639 aura=23217 潜行侦测 class=4 inv=1024 mag0=10->20 sample=16397 baseF=53356
+line=640 aura=23236 祈福 class=2 inv=131072 mag0=2->4 sample=18608 baseF=53360
+line=641 aura=23266 烈焰光环 class=4 inv=4096 mag0=13->26 sample=18815 baseF=53364
+line=642 aura=23300 Seal of the Crusader Judgement Increase class=4 inv=1024 mag0=20->40 sample=16410 baseF=53368
+line=643 aura=23434 提高致命一击法术 class=4 inv=2048 mag0=50->100 sample=18970 baseF=53372
+line=644 aura=23515 Block Value 14 class=4 inv=256 mag0=14->28 sample=16965 baseF=53376
+line=645 aura=23516 Block Value 27 class=4 inv=16392 mag0=27->54 sample=16961 baseF=53380
+line=646 aura=23562 Block Value 30 class=4 inv=16384 mag0=30->60 sample=19862 baseF=53384
+line=647 aura=23593 Increase Healing 92 class=4 inv=2 mag0=92->184 sample=19132 baseF=53388
+line=648 aura=23594 Increase Shadow Dam 64 class=4 inv=128 mag0=64->128 sample=19133 baseF=53392
+line=649 aura=23727 Increased Spell Hit Chance 1 class=4 inv=3345356 mag0=1->2 sample=11662 baseF=53396
+line=650 aura=23728 Increase Spell Dam 84 class=2 inv=2097152 mag0=84->168 sample=19360 baseF=53400
+line=651 aura=23729 Increased Spell Hit Chance 2 class=4 inv=131170 mag0=2->4 sample=19388 baseF=53404
+line=652 aura=23730 Increase Spell Dam 64 class=2 inv=2105344 mag0=64->128 sample=19347 baseF=53408
+line=653 aura=23731 Block Value 19 class=4 inv=16384 mag0=19->38 sample=19349 baseF=53412
+line=654 aura=23732 Increase Spell Dam 56 class=2 inv=131072 mag0=56->112 sample=19355 baseF=53416
+line=655 aura=23929 Increase Spell Dam 71 class=2 inv=131072 mag0=71->142 sample=18873 baseF=53420
+line=656 aura=23930 黎明圣印 class=4 inv=4096 mag0=81->162 sample=13209 baseF=53424
+line=657 aura=23990 Item - Minor Run Speed class=4 inv=256 mag0=8->16 sample=20048 baseF=53428
+line=658 aura=24188 强化裁决之锤 class=4 inv=4 mag0=500->1000 sample=19588 baseF=53432
+line=659 aura=24196 Increase Spell Dam 47 class=4 inv=1048576 mag0=47->94 sample=22496 baseF=53436
+line=660 aura=24197 Increase Spell Dam Undead 48 class=4 inv=1048576 mag0=48->96 sample=23085 baseF=53440
+line=661 aura=24198 黎明符文 class=4 inv=4096 mag0=48->96 sample=19812 baseF=53444
+line=662 aura=24243 Increase Spell Dam 840 class=2 inv=131072 mag0=840->1680 sample=19879 baseF=53448
+line=663 aura=24291 Dragon Slaying 48 class=2 inv=8192 mag0=48->96 sample=19961 baseF=53452
+line=664 aura=24292 Dragon Slaying 117 class=2 inv=131072 mag0=117->234 sample=19962 baseF=53456
+line=665 aura=24301 钓鱼技能 +35 class=2 inv=131072 mag0=35->70 sample=19970 baseF=53460
+line=666 aura=24350 安全降落 class=4 inv=65536 mag0=10->20 sample=19982 baseF=53464
+line=667 aura=24426 Increased Critical Holy Spells class=4 inv=2048 mag0=1->2 sample=20006 baseF=53468
+line=668 aura=24432 强化假死 class=4 inv=4 mag0=-2000->-4000 sample=19621 baseF=53472
+line=669 aura=24433 强化愤怒/星火术 class=4 inv=4 mag0=2->4 sample=19613 baseF=53476
+line=670 aura=24434 强化脚踢 class=4 inv=4 mag0=-500->-1000 sample=19617 baseF=53480
+line=671 aura=24436 Copy of Improved Mana/Health Totems class=4 inv=4 mag0=-20->-40 sample=19609 baseF=53484
+line=672 aura=24595 Increase Spell Dam 24 class=2 inv=2097152 mag0=24->48 sample=19903 baseF=53488
+line=673 aura=24697 Attack Power - Feral (+280) class=2 inv=8192 mag0=280->560 sample=21268 baseF=53492
+line=674 aura=24994 Attack Power - Feral (+154) class=2 inv=2097152 mag0=154->308 sample=20580 baseF=53496
+line=675 aura=25901 Weapon Damage 04 class=4 inv=2048 mag0=4->8 sample=21189 baseF=53500
+line=676 aura=25975 Increased Spell Penetration 10 class=4 inv=8393216 mag0=-10->-20 sample=21566 baseF=53504
+line=677 aura=26142 Increase Spell Dam 53 class=2 inv=3145728 mag0=53->106 sample=21398 baseF=53508
+line=678 aura=26155 Increase Spell Dam 59 class=2 inv=8192 mag0=59->118 sample=21416 baseF=53512
+line=679 aura=26158 Increase Spell Dam 60 class=2 inv=131072 mag0=60->120 sample=21452 baseF=53516
+line=680 aura=26228 Increase Healing 121 class=2 inv=2097152 mag0=121->242 sample=21523 baseF=53520
+line=681 aura=26283 Increased Spell Penetration 20 class=4 inv=4096 mag0=-20->-40 sample=21565 baseF=53524
+line=682 aura=26395 Increase Spell Dam 72 class=2 inv=2105344 mag0=72->144 sample=21622 baseF=53528
+line=683 aura=26405 Increase Fire Dam 57 class=4 inv=128 mag0=57->114 sample=21676 baseF=53532
+line=684 aura=26460 Increase Spell Dam 76 class=2 inv=131072 mag0=76->152 sample=21273 baseF=53536
+line=685 aura=26461 Increase Healing 143 class=2 inv=131072 mag0=143->286 sample=21275 baseF=53540
+line=686 aura=26814 Increase Healing 187 class=2 inv=2097152 mag0=187->374 sample=21839 baseF=53544
+line=687 aura=27037 Stealth +8 class=4 inv=256 mag0=8->16 sample=22003 baseF=53548
+line=688 aura=27797 Reduced Reincarnation Cooldown class=4 inv=268435456 mag0=-600000->-1200000 sample=22345 baseF=53552
+line=689 aura=27846 快速治疗之触施放 class=4 inv=268435456 mag0=-150->-300 sample=22399 baseF=53556
+line=690 aura=27847 净化消耗降低 class=4 inv=268435456 mag0=-25->-50 sample=22402 baseF=53560
+line=691 aura=27848 圣印消耗降低 class=4 inv=268435456 mag0=-20->-40 sample=22401 baseF=53564
+line=692 aura=27850 虔诚护甲提高 class=4 inv=268435456 mag0=55->110 sample=22400 baseF=53568
+line=693 aura=27851 Reduced Claw and Rake Cost class=4 inv=268435456 mag0=-3->-6 sample=22397 baseF=53572
+line=694 aura=27853 强化回春治疗 class=4 inv=268435456 mag0=50->100 sample=22398 baseF=53576
+line=695 aura=27855 强化次级治疗波 class=4 inv=268435456 mag0=80->160 sample=22396 baseF=53580
+line=696 aura=27859 强化震击伤害 class=4 inv=268435456 mag0=30->60 sample=22395 baseF=53584
+line=697 aura=28264 Increase Spell Dam 46 class=4 inv=1048576 mag0=46->92 sample=14153 baseF=53588
+line=698 aura=28539 多重射击伤害提高 class=4 inv=1024 mag0=4->8 sample=16463 baseF=53592
+line=699 aura=28686 Increase Healing 161 class=2 inv=8192 mag0=161->322 sample=22942 baseF=53596
+line=700 aura=28687 Increase Spell Dam 85 class=2 inv=8192 mag0=85->170 sample=22803 baseF=53600
+line=701 aura=28693 Increase Spell Dam 95 class=2 inv=8192 mag0=95->190 sample=22807 baseF=53604
+line=702 aura=28767 Increase Spell Dam 51 class=4 inv=2 mag0=51->102 sample=23035 baseF=53608
+line=703 aura=28792 Increase Spell Dam 126 class=2 inv=131072 mag0=126->252 sample=22799 baseF=53612
+line=704 aura=28805 Increase Healing 238 class=2 inv=8192 mag0=238->476 sample=23056 baseF=53616
+line=705 aura=28840 Attack Power 98 class=2 inv=131072 mag0=98->196 sample=22813 baseF=53620
+line=706 aura=28851 强化圣光闪现治疗 class=4 inv=268435456 mag0=83->166 sample=23006 baseF=53624
+line=707 aura=28852 强化十字军圣印 class=4 inv=268435456 mag0=48->96 sample=23203 baseF=53628
+line=708 aura=28853 强化圣光闪现治疗 class=4 inv=268435456 mag0=53->106 sample=23201 baseF=53632
+line=709 aura=28854 强化月火术 class=4 inv=268435456 mag0=17->34 sample=23197 baseF=53636
+line=710 aura=28855 Reduced Maul and Swipe Cost class=4 inv=268435456 mag0=-30->-60 sample=23198 baseF=53640
+line=711 aura=28856 次级治疗波强化 class=4 inv=268435456 mag0=53->106 sample=23200 baseF=53644
+line=712 aura=28857 闪电伤害提高 class=4 inv=268435456 mag0=33->66 sample=23199 baseF=53648
+line=713 aura=28870 Undead Slayer 60 class=4 inv=1024 mag0=60->120 sample=23078 baseF=53652
+line=714 aura=28876 Increase Spell Dam Undead 26 class=4 inv=512 mag0=26->52 sample=23091 baseF=53656
+line=715 aura=29112 黎明勇士 class=4 inv=4096 mag0=150->300 sample=23206 baseF=53660
+line=716 aura=29113 黎明勇士 class=4 inv=4096 mag0=85->170 sample=23207 baseF=53664
+line=717 aura=29369 Increase Healing 134 class=2 inv=8192 mag0=134->268 sample=23454 baseF=53668
