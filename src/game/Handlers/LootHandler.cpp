@@ -27,6 +27,7 @@
 #include "GameObject.h"
 #include "GameObjectAI.h"
 #include "Player.h"
+#include "EnchantComprehensionMgr.h"
 #include "ObjectAccessor.h"
 #include "ObjectGuid.h"
 #include "WorldSession.h"
@@ -549,9 +550,12 @@ void WorldSession::DoLootRelease(ObjectGuid lguid)
                 {
                     if (!pItem->loot.isLooted())
                         player->AutoStoreLoot(pItem->loot); // can be lost if no space
+                    ItemPrototype const* proto = pItem->GetProto();
+                    uint32 permEnchantId = pItem->GetEnchantmentId(PERM_ENCHANTMENT_SLOT);
                     pItem->loot.clear();
                     pItem->SetLootState(ITEM_LOOT_REMOVED);
                     player->DestroyItem(pItem->GetBagSlot(), pItem->GetSlot(), true);
+                    sEnchantComprehensionMgr.TryAfterDisenchant(player, proto, permEnchantId);
                     break;
                 }
                 // normal persistence loot

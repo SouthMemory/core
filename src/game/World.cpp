@@ -80,6 +80,7 @@
 #include "Anticheat/Anticheat.h"
 #include "ThreadPool.h"
 #include "AuraRemovalMgr.h"
+#include "EnchantComprehensionMgr.h"
 #include "InstanceStatistics.h"
 #include "GuardMgr.h"
 #include "TransportMgr.h"
@@ -552,6 +553,10 @@ void World::LoadConfigSettings(bool reload)
 
     setConfig(CONFIG_BOOL_DURABILITY_LOSS_ENABLE, "DurabilityLoss.Enable", true);
     setConfigPos(CONFIG_FLOAT_RATE_DURABILITY_LOSS_DAMAGE, "DurabilityLossChance.Damage", 0.5f);
+
+    setConfig(CONFIG_BOOL_ENCHANT_COMPREHENSION, "EnchantComprehension.Enable", true);
+    setConfig(CONFIG_UINT32_ENCHANT_COMPREHENSION_DISENCHANT_CHANCE, "EnchantComprehension.DisenchantChance", 25);
+    setConfig(CONFIG_UINT32_ENCHANT_COMPREHENSION_ENCHANT_CAST_CHANCE, "EnchantComprehension.EnchantCastChance", 25);
 
     setConfigPos(CONFIG_FLOAT_LISTEN_RANGE_SAY,       "ListenRange.Say",       25.0f);
     setConfigPos(CONFIG_FLOAT_LISTEN_RANGE_YELL,      "ListenRange.Yell",     300.0f);
@@ -1414,6 +1419,9 @@ void World::SetInitialWorldSettings()
 
     sLog.Out(LOG_BASIC, LOG_LVL_MINIMAL, "Loading SkillLineAbilityMultiMaps Data...");
     sSpellMgr.LoadSkillLineAbilityMaps();
+
+    sLog.Out(LOG_BASIC, LOG_LVL_MINIMAL, "Loading Enchant Comprehension...");
+    sEnchantComprehensionMgr.Load();
 
     sLog.Out(LOG_BASIC, LOG_LVL_MINIMAL, "Loading SkillRaceClassInfoMultiMap Data...");
     sSpellMgr.LoadSkillRaceClassInfoMap();

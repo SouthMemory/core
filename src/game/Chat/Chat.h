@@ -826,6 +826,7 @@ class ChatHandler
         bool HandleReloadLocalesQuestCommand(char* args);
         bool HandleReloadLootTemplatesCreatureCommand(char* args);
         bool HandleReloadLootTemplatesDisenchantCommand(char* args);
+        bool HandleReloadEnchantLineCommand(char* args);
         bool HandleReloadLootTemplatesFishingCommand(char* args);
         bool HandleReloadLootTemplatesGameobjectCommand(char* args);
         bool HandleReloadLootTemplatesItemCommand(char* args);

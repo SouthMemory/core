@@ -20,6 +20,7 @@
 #include "World.h"
 #include "Player.h"
 #include "Chat.h"
+#include "EnchantComprehensionMgr.h"
 #include "ObjectAccessor.h"
 #include "Language.h"
 #include "AccountMgr.h"
@@ -1186,6 +1187,18 @@ bool ChatHandler::HandleReloadLootTemplatesDisenchantCommand(char* /*args*/)
     LoadLootTemplates_Disenchant();
     LootTemplates_Disenchant.CheckLootRefs();
     SendSysMessage("DB table `disenchant_loot_template` reloaded.");
+    return true;
+}
+
+bool ChatHandler::HandleReloadEnchantLineCommand(char* /*args*/)
+{
+    sLog.Out(LOG_BASIC, LOG_LVL_MINIMAL, "Re-Loading Enchant Comprehension (`enchant_line`)...");
+    if (!sEnchantComprehensionMgr.Load())
+    {
+        SendSysMessage("Enchant comprehension reload failed; previous data kept.");
+        return true;
+    }
+    SendSysMessage("DB tables `enchant_line` / `enchant_line_rank` reloaded.");
     return true;
 }
 

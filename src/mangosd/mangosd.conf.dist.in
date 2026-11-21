@@ -3334,3 +3334,23 @@ DynamicRespawn.AffectLevelBelow = 0
 DynamicRespawn.PlayersThreshold = 0
 DynamicRespawn.PlayersMaxLevelDiff = 0
 
+###################################################################################################################
+# ENCHANT COMPREHENSION
+###################################################################################################################
+
+#    EnchantComprehension.Enable
+#        Enable disenchant/enchant-cast recipe learning.
+#        Default:     1
+
+#    EnchantComprehension.DisenchantChance
+#        Percent chance to learn an eligible recipe after disenchanting.
+#        Default:     25
+
+#    EnchantComprehension.EnchantCastChance
+#        Percent chance to learn the next direction rank after casting an enchant.
+#        Default:     25
+
+EnchantComprehension.Enable = 1
+EnchantComprehension.DisenchantChance = 25
+EnchantComprehension.EnchantCastChance = 25
+

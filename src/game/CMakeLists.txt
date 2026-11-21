@@ -18,6 +18,7 @@
 set (game_SRCS
     AccountMgr.cpp
     AuraRemovalMgr.cpp
+    EnchantComprehensionMgr.cpp
     AutoBroadCastMgr.cpp
     Camera.cpp
     Conditions.cpp
@@ -251,6 +252,7 @@ set (game_SRCS
     AccountData.h
     AccountMgr.h
     AuraRemovalMgr.h
+    EnchantComprehensionMgr.h
     AutoBroadCastMgr.h
     Camera.h
     ClientDefines.h

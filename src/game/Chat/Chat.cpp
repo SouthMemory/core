@@ -830,6 +830,7 @@ ChatCommand * ChatHandler::getCommandTable()
         { "creature_spells_scripts",      SEC_DEVELOPER,     true,  &ChatHandler::HandleReloadCreatureSpellScriptsCommand,    "", nullptr },
         { "creature_template",            SEC_DEVELOPER,     true,  &ChatHandler::HandleReloadCreatureTemplatesCommand,       "", nullptr },
         { "disenchant_loot_template",     SEC_DEVELOPER,     true,  &ChatHandler::HandleReloadLootTemplatesDisenchantCommand, "", nullptr },
+        { "enchant_line",                 SEC_DEVELOPER,     true,  &ChatHandler::HandleReloadEnchantLineCommand,             "", nullptr },
         { "event_scripts",                SEC_DEVELOPER,     true,  &ChatHandler::HandleReloadEventScriptsCommand,            "", nullptr },
         { "exploration_basexp",           SEC_DEVELOPER,     true,  &ChatHandler::HandleReloadExplorationBaseXp,              "", nullptr },
         { "fishing_loot_template",        SEC_DEVELOPER,     true,  &ChatHandler::HandleReloadLootTemplatesFishingCommand,    "", nullptr },

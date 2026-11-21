@@ -29,6 +29,7 @@
 #include "ObjectMgr.h"
 #include "SpellMgr.h"
 #include "Player.h"
+#include "EnchantComprehensionMgr.h"
 #include "Spell.h"
 #include "DynamicObject.h"
 #include "SpellAuras.h"
@@ -3039,6 +3040,8 @@ void Spell::EffectEnchantItemPerm(SpellEffectIndex effIdx)
 
     // add new enchanting if equipped
     pItemOwner->ApplyEnchantment(itemTarget, PERM_ENCHANTMENT_SLOT, true);
+
+    sEnchantComprehensionMgr.TryAfterEnchantCast(pCaster, m_spellInfo->Id, enchantId);
 }
 
 void Spell::EffectEnchantItemTmp(SpellEffectIndex effIdx)
