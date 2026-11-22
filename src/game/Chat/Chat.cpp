@@ -1184,6 +1184,13 @@ ChatCommand * ChatHandler::getCommandTable()
         { nullptr,          0,                false, nullptr,                                          "", nullptr }
     };
 
+    static ChatCommand personaCommandTable[] =
+    {
+        { "info",           SEC_PLAYER,         false, &ChatHandler::HandlePersonaInfoCommand,        "", nullptr },
+        { "trace",          SEC_ADMINISTRATOR,  true,  &ChatHandler::HandlePersonaTraceCommand,       "", nullptr },
+        { nullptr,          0,                  false, nullptr,                                       "", nullptr }
+    };
+
     static ChatCommand commandTable[] =
     {
         { "account",        SEC_PLAYER,         true, nullptr,                                         "", accountCommandTable  },
@@ -1222,6 +1229,7 @@ ChatCommand * ChatHandler::getCommandTable()
         { "ahbot",          SEC_ADMINISTRATOR,  true, nullptr,                            "Manage AH bot", ahbotCommandTable    },
         { "partybot",       SEC_ADMINISTRATOR,  false, nullptr,                       "Manage party bots", partyBotCommandTable },
         { "battlebot",      SEC_ADMINISTRATOR,  true, nullptr,                      "Manage battle bots", battleBotCommandTable},
+        { "persona",        SEC_PLAYER,         true,  nullptr,                                        "", personaCommandTable  },
         { "world",          SEC_ADMINISTRATOR,  false, nullptr,                                        "", worldCommandTable    },
         { "possess",        SEC_GAMEMASTER,     false, &ChatHandler::HandlePossessCommand,             "", nullptr              },
         { "cinematic",      SEC_DEVELOPER,      false, nullptr,                                        "", cinematicCommandTable},

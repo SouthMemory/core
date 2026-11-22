@@ -40,6 +40,7 @@
 #include "AuctionHouseMgr.h"
 #include "ObjectMgr.h"
 #include "CreatureEventAIMgr.h"
+#include "CreaturePersonaMapping.h"
 #include "Guild.h"
 #include "GuildMgr.h"
 #include "SpellMgr.h"
@@ -994,6 +995,8 @@ void World::LoadConfigSettings(bool reload)
 
     sPlayerBotMgr.LoadConfig();
     setConfig(CONFIG_BOOL_CREATURE_PERSONA_ENABLE, "CreaturePersona.Enable", false);
+    setConfig(CONFIG_BOOL_CREATURE_PERSONA_RANDOM_SPEC, "CreaturePersona.RandomSpec", true);
+    setConfig(CONFIG_BOOL_CREATURE_PERSONA_MAPPING_DEBUG, "CreaturePersona.MappingDebug", false);
     setConfig(CONFIG_BOOL_PLAYER_BOT_SHOW_IN_WHO_LIST, "PlayerBot.ShowInWhoList", false);
     setConfig(CONFIG_UINT32_PARTY_BOT_MAX_BOTS, "PartyBot.MaxBots", 0);
     setConfig(CONFIG_BOOL_PARTY_BOT_SKIP_CHECKS, "PartyBot.SkipChecks", false);
@@ -1773,6 +1776,9 @@ void World::SetInitialWorldSettings()
 
     sLog.Out(LOG_BASIC, LOG_LVL_MINIMAL, "Loading CreatureEventAI Events...");
     sEventAIMgr.LoadCreatureEventAI_Events();
+
+    sLog.Out(LOG_BASIC, LOG_LVL_MINIMAL, "Loading CreaturePersona map...");
+    CreaturePersonaMapping::LoadFromDB();
 
     sLog.Out(LOG_BASIC, LOG_LVL_MINIMAL, "Initializing Scripts...");
     sScriptMgr.Initialize();

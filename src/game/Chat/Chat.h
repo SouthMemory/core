@@ -705,6 +705,8 @@ class ChatHandler
         bool HandleNpcSetFlagCommand(char* args);
         bool HandleNpcFollowCommand(char* args);
         bool HandleNpcInfoCommand(char* args);
+        bool HandlePersonaInfoCommand(char* args);
+        bool HandlePersonaTraceCommand(char* args);
         bool HandleNpcSpawnInfoCommand(char* args);
         bool HandleNpcMoveCommand(char* args);
         bool HandleNpcSpawnMoveCommand(char* args);

@@ -163,10 +163,43 @@ namespace
 uint32 const STANCE_LOCK_MS = 8000;
 }
 
-CreaturePersonaWarrior::CreaturePersonaWarrior(Creature* owner, CreaturePersonaWarriorSpells const& spells)
-    : CreaturePersona(owner), m_spells(spells)
+CreaturePersonaWarrior::CreaturePersonaWarrior(Creature* owner, CreaturePersonaWarriorSpells const& spells,
+                                               uint8 personaClass, PersonaSpec spec)
+    : CreaturePersona(owner, personaClass, spec), m_spells(spells)
 {
     EnsureRagePool();
+}
+
+void CreaturePersonaWarrior::AppendSpellInfo(std::ostringstream& os) const
+{
+    AppendSpellLine(os, "Battle Stance", m_spells.battleStance);
+    AppendSpellLine(os, "Defensive Stance", m_spells.defensiveStance);
+    AppendSpellLine(os, "Berserker Stance", m_spells.berserkerStance);
+    AppendSpellLine(os, "Charge", m_spells.charge);
+    AppendSpellLine(os, "Intercept", m_spells.intercept);
+    AppendSpellLine(os, "Overpower", m_spells.overpower);
+    AppendSpellLine(os, "Heroic Strike", m_spells.heroicStrike);
+    AppendSpellLine(os, "Cleave", m_spells.cleave);
+    AppendSpellLine(os, "Execute", m_spells.execute);
+    AppendSpellLine(os, "Mortal Strike", m_spells.mortalStrike);
+    AppendSpellLine(os, "Bloodthirst", m_spells.bloodthirst);
+    AppendSpellLine(os, "Bloodrage", m_spells.bloodrage);
+    AppendSpellLine(os, "Berserker Rage", m_spells.berserkerRage);
+    AppendSpellLine(os, "Recklessness", m_spells.recklessness);
+    AppendSpellLine(os, "Retaliation", m_spells.retaliation);
+    AppendSpellLine(os, "Death Wish", m_spells.deathWish);
+    AppendSpellLine(os, "Intimidating Shout", m_spells.intimidatingShout);
+    AppendSpellLine(os, "Pummel", m_spells.pummel);
+    AppendSpellLine(os, "Rend", m_spells.rend);
+    AppendSpellLine(os, "Disarm", m_spells.disarm);
+    AppendSpellLine(os, "Whirlwind", m_spells.whirlwind);
+    AppendSpellLine(os, "Battle Shout", m_spells.battleShout);
+    AppendSpellLine(os, "Demoralizing Shout", m_spells.demoShout);
+    AppendSpellLine(os, "Hamstring", m_spells.hamstring);
+    AppendSpellLine(os, "Thunder Clap", m_spells.thunderClap);
+    AppendSpellLine(os, "Sweeping Strikes", m_spells.sweepingStrikes);
+    AppendSpellLine(os, "Mocking Blow", m_spells.mockingBlow);
+    AppendSpellLine(os, "Concussion Blow", m_spells.concussionBlow);
 }
 
 SpellEntry const* CreaturePersonaWarrior::StanceSpell(ShapeshiftForm form) const
@@ -202,7 +235,8 @@ bool CreaturePersonaWarrior::Cast(Unit* target, SpellEntry const* spell)
 
 void CreaturePersonaWarrior::OnEnterCombat()
 {
-    CreaturePersona::OnEnterCombat();
+    EnsureRagePool();
+    GainRage(25);
     m_stanceLockMs = 0;
     if (m_owner->GetShapeshiftForm() == FORM_NONE && m_spells.battleStance)
         TryCast(m_owner, m_spells.battleStance);

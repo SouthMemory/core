@@ -112,6 +112,10 @@ void CreatureAI::SetSpellsList(CreatureSpellsList const* pSpellsList)
 
 void CreatureAI::UpdateSpellsList(uint32 const uiDiff)
 {
+    // Persona owns the combat cast window; native spell_list would starve it (e.g. MAIN_RANGED LB spam).
+    if (m_creature->GetPersona())
+        return;
+
     if (m_uiCastingDelay <= uiDiff)
     {
         uint32 const uiDesync = (uiDiff - m_uiCastingDelay);

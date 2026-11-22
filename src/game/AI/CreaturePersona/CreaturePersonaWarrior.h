@@ -39,11 +39,13 @@ struct CreaturePersonaWarriorSpells
 class CreaturePersonaWarrior : public CreaturePersona
 {
 public:
-    explicit CreaturePersonaWarrior(Creature* owner, CreaturePersonaWarriorSpells const& spells);
+    explicit CreaturePersonaWarrior(Creature* owner, CreaturePersonaWarriorSpells const& spells,
+                                    uint8 personaClass, PersonaSpec spec = PERSONA_SPEC_NONE);
 
     void OnEnterCombat() override;
     void UpdateCombat() override;
     void OnUpdate(uint32 diff) override;
+    void AppendSpellInfo(std::ostringstream& os) const override;
 
 private:
     bool Cast(Unit* target, SpellEntry const* spell);

@@ -67,6 +67,9 @@ set (game_SRCS
     AI/ScriptedPetAI.cpp
     AI/TotemAI.cpp
     AI/CreaturePersona/CreaturePersona.cpp
+    AI/CreaturePersona/CreaturePersonaMapping.cpp
+    AI/CreaturePersona/CreaturePersonaShaman.cpp
+    AI/CreaturePersona/CreaturePersonaTrace.cpp
     AI/CreaturePersona/CreaturePersonaWarrior.cpp
     Anticheat/Anticheat.cpp
     AuctionHouse/AuctionHouseBotMgr.cpp
@@ -90,6 +93,7 @@ set (game_SRCS
     Commands/LookupCommands.cpp
     Commands/MiscCommands.cpp
     Commands/ObjectCommands.cpp
+    Commands/PersonaCommands.cpp
     Commands/ServerCommands.cpp
     Commands/TeleportCommands.cpp
     Commands/TicketCommands.cpp
@@ -315,6 +319,9 @@ set (game_SRCS
     AI/ScriptedPetAI.h
     AI/TotemAI.h
     AI/CreaturePersona/CreaturePersona.h
+    AI/CreaturePersona/CreaturePersonaMapping.h
+    AI/CreaturePersona/CreaturePersonaShaman.h
+    AI/CreaturePersona/CreaturePersonaTrace.h
     AI/CreaturePersona/CreaturePersonaWarrior.h
     Anticheat/Anticheat.h
     Anticheat/MovementAnticheat/MovementAnticheat.cpp
