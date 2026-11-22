@@ -11,6 +11,7 @@
 #include "Group.h"
 #include "PlayerBotAI.h"
 #include "PartyBotAI.h"
+#include "PartyBotHire.h"
 #include "BattleBotAI.h"
 #include "BattleBotWaypoints.h"
 #include "BattleGroundMgr.h"
@@ -175,6 +176,10 @@ void PlayerBotMgr::OnBotLogout(PlayerBotEntry *e)
     e->state = PB_STATE_OFFLINE;
     if (m_confDebug)
         sLog.Out(LOG_BASIC, LOG_LVL_MINIMAL, "[PlayerBot][Logout] '%s' GUID:%u Acc:%u", e->name.c_str(), e->playerGUID, e->accountId);
+    if (e->ai)
+        if (auto* pai = dynamic_cast<PartyBotAI*>(e->ai.get()))
+            if (pai->m_hireContractId)
+                sPartyBotHire.OnHireBotLogout(uint32(e->playerGUID));
 }
 
 void PlayerBotMgr::OnPlayerInWorld(Player* player)
@@ -461,7 +466,9 @@ bool PlayerBotMgr::AddBot(uint32 playerGUID, bool chatBot, PlayerBotAI* pAI)
 
     e->ai->botEntry = e.get();
     e->state = PB_STATE_LOADING;
-    WorldSession* session = new WorldSession(accountId, nullptr, sAccountMgr.GetSecurity(accountId), 0, LOCALE_enUS);
+    // Custom bots (party/hire/battle) always SEC_PLAYER — never inherit GM from account id collision
+    AccountTypes security = e->customBot ? SEC_PLAYER : sAccountMgr.GetSecurity(accountId);
+    WorldSession* session = new WorldSession(accountId, nullptr, security, 0, LOCALE_enUS);
     session->SetBot(e);
     sWorld.AddSession(session);
     m_stats.loadingCount++;

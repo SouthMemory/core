@@ -36,6 +36,7 @@
 #include "Spell.h"
 #include "Chat.h"
 #include "CharacterDatabaseCache.h"
+#include "PartyBotHire.h"
 
 enum StableResultCode
 {
@@ -394,6 +395,12 @@ void WorldSession::HandleGossipSelectOptionOpcode(WorldPackets::Npc::GossipSelec
 
         if (!pCreature->HasExtraFlag(CREATURE_FLAG_EXTRA_NO_MOVEMENT_PAUSE))
             pCreature->PauseOutOfCombatMovement();
+
+        if (sender == GOSSIP_SENDER_PARTYBOT_HIRE)
+        {
+            sPartyBotHire.HandleGossipSelect(_player, pCreature, action);
+            return;
+        }
 
         if (!sScriptMgr.OnGossipSelect(_player, pCreature, sender, action, code))
             _player->OnGossipSelect(pCreature, packet.gossipListId);

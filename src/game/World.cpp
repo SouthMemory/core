@@ -69,6 +69,7 @@
 #include "AuctionHouseBotMgr.h"
 #include "Transports/TransportMgr.h"
 #include "PlayerBotMgr.h"
+#include "PartyBotHire.h"
 #include "ZoneScriptMgr.h"
 #include "CharacterDatabaseCache.h"
 #include "CreatureGroups.h"
@@ -999,6 +1000,9 @@ void World::LoadConfigSettings(bool reload)
     setConfigMinMax(CONFIG_UINT32_PARTY_BOT_AUTO_EQUIP, "PartyBot.AutoEquip", PLAYER_BOT_AUTO_EQUIP_RANDOM_GEAR, PLAYER_BOT_AUTO_EQUIP_STARTING_GEAR, PLAYER_BOT_AUTO_EQUIP_PREMADE_GEAR);
     setConfigMinMax(CONFIG_UINT32_BATTLE_BOT_AUTO_EQUIP, "BattleBot.AutoEquip", PLAYER_BOT_AUTO_EQUIP_RANDOM_GEAR, PLAYER_BOT_AUTO_EQUIP_STARTING_GEAR, PLAYER_BOT_AUTO_EQUIP_PREMADE_GEAR);
     setConfig(CONFIG_UINT32_PARTY_BOT_RANDOM_GEAR_LEVEL_DIFFERENCE, "PartyBot.RandomGearLevelDifference", 10);
+    setConfig(CONFIG_BOOL_PARTY_BOT_HIRE_ENABLE, "PartyBot.Hire.Enable", false);
+    setConfig(CONFIG_UINT32_PARTY_BOT_HIRE_COST_COPPER, "PartyBot.Hire.CostCopper", 1);
+    setConfig(CONFIG_UINT32_PARTY_BOT_HIRE_DURATION_SECONDS, "PartyBot.Hire.DurationSeconds", 36000);
 
     setConfigMinMax(CONFIG_UINT32_SPELL_EFFECT_DELAY, "Spell.EffectDelay", 400, 0, 1000);
     setConfigMinMax(CONFIG_UINT32_SPELL_PROC_DELAY, "Spell.ProcDelay", 400, 0, 1000);
@@ -1856,6 +1860,7 @@ void World::SetInitialWorldSettings()
 
     sLog.Out(LOG_BASIC, LOG_LVL_MINIMAL, "Loading PlayerBot ..."); // Requires Players cache
     sPlayerBotMgr.Load();
+    sPartyBotHire.Load();
 
     sLog.Out(LOG_BASIC, LOG_LVL_MINIMAL, "");
     sLog.Out(LOG_BASIC, LOG_LVL_MINIMAL, "Loading faction change ...");
@@ -2138,6 +2143,7 @@ void World::Update(uint32 diff)
 
     // Update PlayerBotMgr
     sPlayerBotMgr.Update(diff);
+    sPartyBotHire.Update(diff);
     // Update AutoBroadcast
     sAutoBroadCastMgr.Update(diff);
     // Update ban list if necessary

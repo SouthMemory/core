@@ -38,6 +38,7 @@
 #include "LFGQueue.h"
 #include "UpdateMask.h"
 #include "Utilities/Random.h"
+#include "PartyBotHire.h"
 
 #include <array>
 
@@ -451,6 +452,9 @@ uint32 Group::RemoveMember(ObjectGuid guid, uint8 removeMethod)
             {
                 player->GetSession()->SendPacket(std::make_unique<WorldPackets::Group::GroupUninviteNotification>());
 
+                if (player->IsBot())
+                    sPartyBotHire.OnHireBotKicked(player);
+
                 if (IsInLFG())
                 {
                     auto packet = std::make_unique<WorldPackets::Misc::MeetingstoneSetQueue>();
@@ -522,7 +526,14 @@ uint32 Group::RemoveMember(ObjectGuid guid, uint8 removeMethod)
     }
     // if group before remove <= 2 disband it
     else
+    {
+        // Disband path skips the kick block above — still void hire contracts
+        if (removeMethod == GROUP_KICK)
+            if (Player* kicked = sObjectMgr.GetPlayer(guid))
+                if (kicked->IsBot())
+                    sPartyBotHire.OnHireBotKicked(kicked);
         Disband(true, guid);
+    }
 
     return m_memberSlots.size();
 }

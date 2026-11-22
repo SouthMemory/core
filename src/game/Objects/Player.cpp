@@ -73,6 +73,7 @@
 #include "ZoneScript.h"
 #include "ZoneScriptMgr.h"
 #include "PlayerBotMgr.h"
+#include "PartyBotHire.h"
 #include "PlayerBotAI.h"
 #include "AccountMgr.h"
 #include "Anticheat.h"
@@ -2968,11 +2969,11 @@ void Player::UninviteFromGroup()
     }
 }
 
-void Player::RemoveFromGroup(Group* group, ObjectGuid guid)
+void Player::RemoveFromGroup(Group* group, ObjectGuid guid, uint8 removeMethod)
 {
     if (group)
     {
-        if (group->RemoveMember(guid, 0) <= 1)
+        if (group->RemoveMember(guid, removeMethod) <= 1)
         {
             // group->Disband(); already disbanded in RemoveMember
             sObjectMgr.RemoveGroup(group);
@@ -12152,6 +12153,11 @@ void Player::PrepareGossipMenu(WorldObject* pSource, uint32 menuId)
 
     if (canSeeQuests)
         PrepareQuestMenu(pSource->GetObjectGuid());
+
+    if (defaultMenu && pSource->IsCreature())
+        if (Creature* c = pSource->ToCreature())
+            if (c->IsInnkeeper())
+                sPartyBotHire.AppendInnkeeperGossip(this, c);
 }
 
 void Player::SendPreparedGossip(WorldObject* pSource)

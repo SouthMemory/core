@@ -37,23 +37,23 @@ void CreaturePersona::Update(uint32 diff)
 {
     OnUpdate(diff);
 
-    if (!m_owner->IsInCombat() || !m_owner->GetVictim())
+    if (!m_owner->IsInCombat())
     {
         m_castTimer = 0;
         m_rageCarryMs = 0;
         return;
     }
 
-    if (m_owner->CanReachWithMeleeAutoAttack(m_owner->GetVictim()))
+    // 7 rage/sec while in combat (not melee-gated)
+    m_rageCarryMs += diff * 7;
+    if (uint32 const add = m_rageCarryMs / 1000)
     {
-        // 7 rage/sec; carry remainder so short diffs don't truncate to 0
-        m_rageCarryMs += diff * 7;
-        if (uint32 const add = m_rageCarryMs / 1000)
-        {
-            m_rageCarryMs %= 1000;
-            GainRage(int32(add));
-        }
+        m_rageCarryMs %= 1000;
+        GainRage(int32(add));
     }
+
+    if (!m_owner->GetVictim())
+        return;
 
     if (m_castTimer > diff)
     {

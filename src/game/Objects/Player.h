@@ -2451,7 +2451,7 @@ class Player final: public Unit
         bool IsInSameGroupWith(Player const* p) const;
         bool IsInSameRaidWith(Player const* p) const { return p == this || (GetGroup() != nullptr && GetGroup() == p->GetGroup()); }
         void UninviteFromGroup();
-        static void RemoveFromGroup(Group* group, ObjectGuid guid);
+        static void RemoveFromGroup(Group* group, ObjectGuid guid, uint8 removeMethod = 0);
         void RemoveFromGroup() { RemoveFromGroup(GetGroup(), GetObjectGuid()); }
         void SendUpdateToOutOfRangeGroupMembers();
         void SendDestroyGroupMembers(bool includingSelf = false);

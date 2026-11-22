@@ -238,7 +238,7 @@ void WorldSession::HandleGroupUninviteGuidOpcode(WorldPackets::Group::GroupUninv
 
     if (grp->IsMember(packet.guid))
     {
-        Player::RemoveFromGroup(grp, packet.guid);
+        Player::RemoveFromGroup(grp, packet.guid, GROUP_KICK);
         return;
     }
 
@@ -276,7 +276,7 @@ void WorldSession::HandleGroupUninviteOpcode(WorldPackets::Group::GroupUninvite 
             SendPartyResult(PARTY_OP_LEAVE, "", res);
             return;
         }
-        Player::RemoveFromGroup(grp, guid);
+        Player::RemoveFromGroup(grp, guid, GROUP_KICK);
         return;
     }
 

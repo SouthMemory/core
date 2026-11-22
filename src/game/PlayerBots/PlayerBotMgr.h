@@ -130,5 +130,7 @@ class PlayerBotMgr
         bool m_confBattleBotAutoJoin;
 };
 
+uint8 SelectRandomRaceForClass(uint8 playerClass, Team playerTeam);
+
 #define sPlayerBotMgr MaNGOS::Singleton<PlayerBotMgr>::Instance()
 #endif

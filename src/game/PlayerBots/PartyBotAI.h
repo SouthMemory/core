@@ -105,6 +105,7 @@ public:
     float m_z = 0.0f;
     float m_o = 0.0f;
     bool m_resetSpellData = false;
+    uint32 m_hireContractId = 0; // character_partybot_hire.id; 0 = not a hire bot
 };
 
 #endif

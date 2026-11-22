@@ -41,6 +41,7 @@
 #include "MasterPlayer.h"
 #include "PlayerBroadcaster.h"
 #include "PlayerBotMgr.h"
+#include "PartyBotHire.h"
 #include "MapManager.h"
 #include "AccountMgr.h"
 
@@ -610,6 +611,17 @@ void WorldSession::HandlePlayerLogin(LoginQueryHolder *holder)
     pCurrChar->SendInitialPacketsAfterAddToMap();
     if (alreadyOnline)
         pCurrChar->SendInitWorldStates(pCurrChar->GetCachedZoneId());
+
+    // Hire bots: recall after map settle (wall-clock contracts)
+    if (!pCurrChar->IsBot())
+    {
+        ObjectGuid ownerGuid = pCurrChar->GetObjectGuid();
+        pCurrChar->m_Events.AddLambdaEventAtOffset([ownerGuid]
+        {
+            if (Player* p = sObjectAccessor.FindPlayer(ownerGuid))
+                sPartyBotHire.OnOwnerLogin(p);
+        }, 2000);
+    }
 
     static SqlStatementID updChars;
     static SqlStatementID updAccount;

@@ -16,6 +16,7 @@
 
 #include "PartyBotAI.h"
 #include "Player.h"
+#include "Corpse.h"
 #include "CreatureAI.h"
 #include "MotionMaster.h"
 #include "ObjectMgr.h"
@@ -232,37 +233,6 @@ bool PartyBotAI::DrinkAndEat()
     }
 
     return needToEat || needToDrink;
-}
-
-bool PartyBotAI::ShouldAutoRevive() const
-{
-    if (me->GetDeathState() == DEAD)
-        return true;
-
-    bool alivePlayerNearby = false;
-    Group* pGroup = me->GetGroup();
-    for (GroupReference* itr = pGroup->GetFirstMember(); itr != nullptr; itr = itr->next())
-    {
-        if (Player* pMember = itr->getSource())
-        {
-            if (pMember == me)
-                continue;
-
-            if (pMember->IsInCombat())
-                return false;
-
-            if (pMember->IsAlive())
-            {
-                if (IsHealerClass(pMember->GetClass()))
-                    return false;
-
-                if (me->IsWithinDistInMap(pMember, 15.0f))
-                    alivePlayerNearby = true;
-            }
-        }
-    }
-
-    return alivePlayerNearby;
 }
 
 bool PartyBotAI::CanTryToCastSpell(Unit const* pTarget, SpellEntry const* pSpellEntry) const
@@ -603,6 +573,9 @@ void PartyBotAI::OnPlayerLogin()
 
 void PartyBotAI::UpdateAI(uint32 const diff)
 {
+    // Must run every tick — graveyard/corpse teleports need MoveTeleportAck
+    PlayerBotAI::UpdateAI(diff);
+
     m_updateTimer.Update(diff);
     if (m_updateTimer.Passed())
         m_updateTimer.Reset(PB_UPDATE_INTERVAL);
@@ -722,32 +695,53 @@ void PartyBotAI::UpdateAI(uint32 const diff)
        !me->SelectRandomUnfriendlyTarget(nullptr, 20.0f, false, true))
         me->RemoveSpellsCausingAura(SPELL_AURA_FEIGN_DEATH);
 
-    if (me->HasUnitState(UNIT_STATE_CAN_NOT_REACT_OR_LOST_CONTROL))
-    {
-        BreakCrowdControlEffects();
-        return;
-    }
-
     if (me->IsDead())
     {
-        if (me->InBattleGround())
+        if (me->GetDeathState() == CORPSE)
         {
-            if (me->GetDeathState() == CORPSE)
+            me->BuildPlayerRepop();
+            me->RepopAtGraveyard();
+            return;
+        }
+
+        // Ghost: run to corpse and reclaim
+        if (Corpse* corpse = me->GetCorpse())
+        {
+            if (corpse->GetMapId() != me->GetMapId())
             {
-                me->BuildPlayerRepop();
-                me->RepopAtGraveyard();
+                me->TeleportTo(corpse->GetMapId(), corpse->GetPositionX(), corpse->GetPositionY(),
+                    corpse->GetPositionZ(), me->GetOrientation());
+                return;
             }
+
+            if (corpse->IsWithinDistInMap(me, CORPSE_RECLAIM_RADIUS, true))
+            {
+                time_t const reclaimAt = corpse->GetGhostTime() +
+                    me->GetCorpseReclaimDelay(corpse->GetType() == CORPSE_RESURRECTABLE_PVP);
+                if (time(nullptr) >= reclaimAt)
+                {
+                    me->ResurrectPlayer(0.5f);
+                    me->SpawnCorpseBones();
+                    me->CastSpell(me, PB_SPELL_HONORLESS_TARGET, true);
+                }
+                return;
+            }
+
+            if (me->GetMotionMaster()->GetCurrentMovementGeneratorType() != POINT_MOTION_TYPE)
+                me->GetMotionMaster()->MovePoint(0, corpse->GetPositionX(), corpse->GetPositionY(),
+                    corpse->GetPositionZ(), MOVE_PATHFINDING | MOVE_EXCLUDE_STEEP_SLOPES);
         }
         else
         {
-            if (ShouldAutoRevive())
-            {
-                me->ResurrectPlayer(0.5f);
-                me->SpawnCorpseBones();
-                me->CastSpell(me, PB_SPELL_HONORLESS_TARGET, true);
-            }
+            me->ResurrectPlayer(0.5f);
+            me->CastSpell(me, PB_SPELL_HONORLESS_TARGET, true);
         }
+        return;
+    }
 
+    if (me->HasUnitState(UNIT_STATE_CAN_NOT_REACT_OR_LOST_CONTROL))
+    {
+        BreakCrowdControlEffects();
         return;
     }
 
