@@ -7069,10 +7069,15 @@ SpellCastResult Spell::CheckPower() const
     }
 
     // Allow creatures to cast spells that require a power type they don't have.
-    if (m_casterUnit->IsCreature() && !m_casterUnit->IsPet() &&
-       ((m_spellInfo->powerType == POWER_MANA && !m_casterUnit->GetCreateMana()) || // creature without mana (unit class warrior)
-       (m_spellInfo->powerType != POWER_MANA))) // power that normal creatures can't have
-        return SPELL_CAST_OK;
+    // CreaturePersona uses a real power pool and must obey costs.
+    if (m_casterUnit->IsCreature() && !m_casterUnit->IsPet())
+    {
+        Creature const* c = static_cast<Creature const*>(m_casterUnit);
+        if (!c->GetPersona() &&
+            ((m_spellInfo->powerType == POWER_MANA && !m_casterUnit->GetCreateMana()) ||
+             (m_spellInfo->powerType != POWER_MANA)))
+            return SPELL_CAST_OK;
+    }
 
     // Check power amount
     Powers powerType = Powers(m_spellInfo->powerType);

@@ -38,6 +38,7 @@
 #include "MapManager.h"
 #include "CreatureAI.h"
 #include "CreatureAISelector.h"
+#include "CreaturePersona.h"
 #include "MovementGenerator.h"
 #include "MapPersistentStateMgr.h"
 #include "BattleGroundMgr.h"
@@ -247,7 +248,7 @@ bool CreatureCreatePos::Relocate(Creature* cr) const
 }
 
 Creature::Creature(CreatureSubtype subtype) :
-    Unit(), m_AI(nullptr),
+    Unit(), m_AI(nullptr), m_persona(nullptr),
     loot(this), lootForPickPocketed(false), lootForBody(false), lootForSkin(false), skinningForOthersTimer(5000), m_targetNotReachableTimer(0),
     m_pacifiedTimer(0), m_manaRegen(0),
     m_groupLootTimer(0), m_groupLootId(0), m_lootMoney(0), m_lootGroupRecipientId(0), m_corpseDecayTimer(0),
@@ -273,6 +274,8 @@ Creature::~Creature()
 
     delete m_AI;
     m_AI = nullptr;
+    delete m_persona;
+    m_persona = nullptr;
 }
 
 void Creature::AddToWorld()
@@ -1039,7 +1042,11 @@ void Creature::Update(uint32 update_diff, uint32 diff)
                     if (leash || (m_targetNotReachableTimer > 24000))
                         AI()->EnterEvadeMode();
                     else if (!IsEvadeBecauseTargetNotReachable())
+                    {
                         AI()->UpdateAI(diff);   // AI not react good at real update delays (while freeze in non-active part of map)
+                        if (m_persona)
+                            m_persona->Update(diff);
+                    }
                 }
                 catch (std::runtime_error& e)
                 {
@@ -1308,7 +1315,14 @@ bool Creature::AIM_Initialize()
     m_AI = FactorySelector::selectAI(this);
 
     delete oldAI;
+    RefreshPersona();
     return true;
+}
+
+void Creature::RefreshPersona()
+{
+    delete m_persona;
+    m_persona = CreaturePersona::CreateIfEligible(this);
 }
 
 bool Creature::Create(uint32 guidlow, CreatureCreatePos& cPos, CreatureInfo const* cinfo, uint32 firstCreatureId, GameEventCreatureData const* eventData /*= nullptr*/)
@@ -3672,6 +3686,9 @@ void Creature::OnEnterCombat(Unit* pWho, bool notInCombat)
 
         if (m_AI)
             m_AI->EnterCombat(pWho);
+
+        if (m_persona)
+            m_persona->OnEnterCombat();
 
         // Mark as At War with faction in client so player can attack back.
         if (GetReputationId() >= 0)

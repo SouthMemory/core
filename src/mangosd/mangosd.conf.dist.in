@@ -3221,6 +3221,17 @@ AHBot.itemcount = 50
 #
 ###################################################################################################################
 
+###################################################################################################################
+# CREATURE PERSONA (生物拟态)
+###################################################################################################################
+#
+#    CreaturePersona.Enable
+#        Overlay full player-class combat rotations on eligible creatures
+#        (keeps EventAI / creature_spells / scripts; see design docs).
+#        Default: 0 (off)
+#
+CreaturePersona.Enable = 0
+
 RandomBot.Enable = 0
 RandomBot.MinBots = 0
 RandomBot.MaxBots = 0

@@ -34,6 +34,7 @@
 
 class SpellEntry;
 class CreatureAI;
+class CreaturePersona;
 class Group;
 class Quest;
 class Player;
@@ -75,6 +76,7 @@ public:
 class Creature : public Unit
 {
     CreatureAI *m_AI;
+    CreaturePersona* m_persona;
 
     public:
 
@@ -214,6 +216,9 @@ class Creature : public Unit
 
         CreatureAI* AI() { return m_AI; }
         CreatureAI const* AI() const { return m_AI; }
+        void RefreshPersona();
+        CreaturePersona* GetPersona() { return m_persona; }
+        CreaturePersona const* GetPersona() const { return m_persona; }
         void SetAInitializeOnRespawn(bool initialize)
         {
             if (initialize)

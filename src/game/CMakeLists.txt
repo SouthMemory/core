@@ -66,6 +66,8 @@ set (game_SRCS
     AI/ScriptedInstance.cpp
     AI/ScriptedPetAI.cpp
     AI/TotemAI.cpp
+    AI/CreaturePersona/CreaturePersona.cpp
+    AI/CreaturePersona/CreaturePersonaWarrior.cpp
     Anticheat/Anticheat.cpp
     AuctionHouse/AuctionHouseBotMgr.cpp
     AuctionHouse/AuctionHouseMgr.cpp
@@ -311,6 +313,8 @@ set (game_SRCS
     AI/ScriptedInstance.h
     AI/ScriptedPetAI.h
     AI/TotemAI.h
+    AI/CreaturePersona/CreaturePersona.h
+    AI/CreaturePersona/CreaturePersonaWarrior.h
     Anticheat/Anticheat.h
     Anticheat/MovementAnticheat/MovementAnticheat.cpp
     Anticheat/MovementAnticheat/MovementAnticheat.h
@@ -547,6 +551,7 @@ endif()
 include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}
   ${CMAKE_CURRENT_SOURCE_DIR}/AI
+  ${CMAKE_CURRENT_SOURCE_DIR}/AI/CreaturePersona
   ${CMAKE_CURRENT_SOURCE_DIR}/Anticheat
   ${CMAKE_CURRENT_SOURCE_DIR}/AuctionHouse
   ${CMAKE_CURRENT_SOURCE_DIR}/Battlegrounds

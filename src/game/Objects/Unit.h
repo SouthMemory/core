@@ -987,6 +987,8 @@ class Unit : public SpellCaster
 
         void ClearAllReactives();
         void StartReactiveTimer(ReactiveType reactive, ObjectGuid target) { m_reactiveTimer[reactive] = REACTIVE_TIMER_START; m_reactiveTarget[reactive] = target; }
+        void ClearReactiveTimer(ReactiveType reactive) { m_reactiveTimer[reactive] = 0; m_reactiveTarget[reactive].Clear(); }
+        bool HasReactiveTimer(ReactiveType reactive) const { return m_reactiveTimer[reactive] > 0; }
         ObjectGuid const& GetReactiveTarget(ReactiveType reactive) const { return m_reactiveTarget[reactive]; }
         void UpdateReactives(uint32 p_time);
 

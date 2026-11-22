@@ -8916,10 +8916,19 @@ void Unit::ProcSkillsAndReactives(bool isVictim, Unit* pTarget, uint32 procFlag,
             else //For attacker
             {
                 // Overpower on victim dodge
-                if (procExtra & PROC_EX_DODGE && IsPlayer() && GetClass() == CLASS_WARRIOR)
+                if (procExtra & PROC_EX_DODGE && GetClass() == CLASS_WARRIOR)
                 {
-                    static_cast<Player*>(this)->AddComboPoints(pTarget, 1);
-                    StartReactiveTimer(REACTIVE_OVERPOWER, pTarget->GetObjectGuid());
+                    if (IsPlayer())
+                    {
+                        static_cast<Player*>(this)->AddComboPoints(pTarget, 1);
+                        StartReactiveTimer(REACTIVE_OVERPOWER, pTarget->GetObjectGuid());
+                    }
+                    else if (Creature* crea = ToCreature())
+                    {
+                        // CreaturePersona warriors use the same reactive window (no combo points)
+                        if (crea->GetPersona())
+                            StartReactiveTimer(REACTIVE_OVERPOWER, pTarget->GetObjectGuid());
+                    }
                 }
             }
         }
