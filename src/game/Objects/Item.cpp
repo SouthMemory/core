@@ -869,6 +869,9 @@ void Item::AddToUpdateQueueOf(Player* player)
         player = GetOwner();
         if (!player)
         {
+            // Auction/mail placeholder items have no in-world owner (Guid 0).
+            if (GetOwnerGuid().IsEmpty())
+                return;
             sLog.Out(LOG_BASIC, LOG_LVL_ERROR, "Item::AddToUpdateQueueOf - %s current owner (%s) not in world!",
                           GetGuidStr().c_str(), GetOwnerGuid().GetString().c_str());
             return;
@@ -899,6 +902,8 @@ void Item::RemoveFromUpdateQueueOf(Player* player)
         player = GetOwner();
         if (!player)
         {
+            if (GetOwnerGuid().IsEmpty())
+                return;
             sLog.Out(LOG_BASIC, LOG_LVL_ERROR, "Item::RemoveFromUpdateQueueOf - %s current owner (%s) not in world!",
                           GetGuidStr().c_str(), GetOwnerGuid().GetString().c_str());
             return;

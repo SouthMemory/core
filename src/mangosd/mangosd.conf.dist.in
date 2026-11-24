@@ -3127,27 +3127,52 @@ CharDelete.KeepDays = 30
 #
 #    AHBot.Enable
 #        Enable AH bot.
-#        The AH bot will automatically create listings based on the data in the 'auctionhousebot' table.
+#        Scans item_template into quality x class pools (no grey; NO_BIND + BoE only) and refills by quotas.
 #        Default: 0 - off
 #                 1 - on
 #
 #    AHBot.ah.fid
-#        The faction template ID used for the AH bot.
-#        This determines which auction house(s) listings are put into.
+#        Faction template ID for which auction house to fill.
 #        Default: 120 - Neutral (Booty Bay, Gadgetzan and Everlook)
 #                  55 - Alliance (Ironforge, Stormwind and Teldrassil)
 #                  29 - Horde (Orgrimmar, Thunderbluff and Undercity)
 #
 #    AHBot.itemcount
-#        How many listings to put into the auction house at most.
-#        The AH bot will add items until this number of listings is reached in the auction house (this includes potential player listings).
-#        Default: 50
+#        Max listings in that auction house (includes player listings).
+#        Default: 10000
+#
+#    AHBot.Amount.* / AHBot.Priority.* / AHBot.PriceRatio.*
+#        Per-quality listing targets (scaled to itemcount), item-class weights, sell price multipliers (%).
 #
 ###################################################################################################################
 
 AHBot.Enable = 0
 AHBot.ah.fid = 120
-AHBot.itemcount = 50
+AHBot.itemcount = 10000
+
+AHBot.Amount.White = 2500
+AHBot.Amount.Green = 3500
+AHBot.Amount.Blue = 2500
+AHBot.Amount.Purple = 1200
+AHBot.Amount.Orange = 0
+AHBot.Amount.Yellow = 0
+
+AHBot.Priority.TradeGoods = 25
+AHBot.Priority.Armor = 20
+AHBot.Priority.Weapon = 15
+AHBot.Priority.Consumable = 15
+AHBot.Priority.Recipe = 10
+AHBot.Priority.Reagent = 5
+AHBot.Priority.Projectile = 5
+AHBot.Priority.Container = 3
+AHBot.Priority.Quiver = 2
+
+AHBot.PriceRatio.White = 100
+AHBot.PriceRatio.Green = 150
+AHBot.PriceRatio.Blue = 200
+AHBot.PriceRatio.Purple = 350
+AHBot.PriceRatio.Orange = 500
+AHBot.PriceRatio.Yellow = 600
 
 ###################################################################################################################
 # PLAYER BOTS
