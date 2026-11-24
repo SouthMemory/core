@@ -1,4 +1,6 @@
 #include "SpellEntry.h"
+#include "Creature.h"
+#include "CreaturePersona.h"
 
 #include "ScriptMgr.h"
 #include "SharedDefines.h"
@@ -730,8 +732,16 @@ int32 SpellEntry::CalculateDuration(WorldObject const* caster, Unit const* targe
         int32 maxduration = GetMaxDuration();
 
         if (duration != maxduration)
+        {
+            uint8 cp = 0;
             if (Player const* pPlayer = caster->ToPlayer())
-                duration += int32((maxduration - duration) * pPlayer->GetComboPoints() / 5);
+                cp = pPlayer->GetComboPoints();
+            else if (Creature const* crea = caster->ToCreature())
+                if (CreaturePersona const* persona = crea->GetPersona())
+                    cp = persona->GetComboPoints();
+            if (cp)
+                duration += int32((maxduration - duration) * cp / 5);
+        }
 
         if (auraScript)
             duration = auraScript->OnDurationCalculate(caster, target, duration);

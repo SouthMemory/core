@@ -1,6 +1,7 @@
 #include "CreaturePersona.h"
 #include "CreaturePersonaWarrior.h"
 #include "CreaturePersonaShaman.h"
+#include "CreaturePersonaRogue.h"
 #include "CreaturePersonaMapping.h"
 #include "CreaturePersonaTrace.h"
 #include "Creature.h"
@@ -32,6 +33,10 @@ CreaturePersona* CreaturePersona::CreateIfEligible(Creature* c)
             if (spec != PERSONA_SPEC_SHAMAN_ENH)
                 spec = PERSONA_SPEC_SHAMAN_ENH;
             return new CreaturePersonaShaman(c, BuildShamanSpellbook(c), CLASS_SHAMAN, spec);
+        case CLASS_ROGUE:
+            if (spec != PERSONA_SPEC_ROGUE_COMBAT)
+                spec = PERSONA_SPEC_ROGUE_COMBAT;
+            return new CreaturePersonaRogue(c, BuildRogueSpellbook(c), CLASS_ROGUE, spec);
         default:
             return nullptr;
     }
@@ -58,6 +63,7 @@ void CreaturePersona::Update(uint32 diff)
     {
         m_castTimer = 0;
         m_rageCarryMs = 0;
+        m_energyCarryMs = 0;
         return;
     }
 
@@ -68,6 +74,16 @@ void CreaturePersona::Update(uint32 diff)
         {
             m_rageCarryMs %= 1000;
             GainRage(int32(add));
+        }
+    }
+    else if (m_owner->GetPowerType() == POWER_ENERGY)
+    {
+        // classic ~10 energy / sec
+        m_energyCarryMs += diff * 10;
+        if (uint32 const add = m_energyCarryMs / 1000)
+        {
+            m_energyCarryMs %= 1000;
+            GainEnergy(int32(add));
         }
     }
 
@@ -113,10 +129,11 @@ bool CreaturePersona::TryCast(Unit* target, SpellEntry const* spell)
     }
     SpellCastResult const rc = m_owner->TryToCast(target, spell, 0, 100);
     if (Tracing())
-        Trace("%s %s (%u) -> %s : %d",
+        Trace("%s %s (%u) -> %s cp=%u : %d",
             rc == SPELL_CAST_OK ? "CAST" : "FAIL",
             spell->SpellName[0].c_str(), spell->Id,
-            target == m_owner ? "self" : "victim", int32(rc));
+            target == m_owner ? "self" : "victim",
+            uint32(m_comboPoints), int32(rc));
     return rc == SPELL_CAST_OK;
 }
 
@@ -174,6 +191,18 @@ void CreaturePersona::EnsureManaPool()
         m_owner->SetPower(POWER_MANA, maxMana);
 }
 
+void CreaturePersona::EnsureEnergyPool()
+{
+    uint32 const maxEnergy = 100;
+    if (m_owner->GetPowerType() != POWER_ENERGY)
+        m_owner->SetPowerType(POWER_ENERGY);
+    m_owner->SetModifierValue(UNIT_MOD_ENERGY, BASE_VALUE, float(maxEnergy));
+    if (m_owner->GetMaxPower(POWER_ENERGY) != maxEnergy)
+        m_owner->SetMaxPower(POWER_ENERGY, maxEnergy);
+    if (m_owner->GetPower(POWER_ENERGY) == 0)
+        m_owner->SetPower(POWER_ENERGY, maxEnergy);
+}
+
 void CreaturePersona::GainRage(int32 amount)
 {
     if (amount <= 0 || m_owner->GetPowerType() != POWER_RAGE)
@@ -185,6 +214,35 @@ void CreaturePersona::GainRage(int32 amount)
     if (max <= 0)
         max = 1000;
     m_owner->SetPower(POWER_RAGE, std::min(cur + add, max));
+}
+
+void CreaturePersona::GainEnergy(int32 amount)
+{
+    if (amount <= 0 || m_owner->GetPowerType() != POWER_ENERGY)
+        return;
+    EnsureEnergyPool();
+    int32 cur = m_owner->GetPower(POWER_ENERGY);
+    int32 max = m_owner->GetMaxPower(POWER_ENERGY);
+    if (max <= 0)
+        max = 100;
+    m_owner->SetPower(POWER_ENERGY, std::min(cur + amount, max));
+}
+
+void CreaturePersona::AddComboPoints(int8 count)
+{
+    if (count == 0)
+        return;
+    int32 cp = int32(m_comboPoints) + count;
+    if (cp > 5)
+        cp = 5;
+    if (cp < 0)
+        cp = 0;
+    m_comboPoints = uint8(cp);
+}
+
+void CreaturePersona::ClearComboPoints()
+{
+    m_comboPoints = 0;
 }
 
 void CreaturePersona::AppendSpellLine(std::ostringstream& os, char const* label, SpellEntry const* spell) const

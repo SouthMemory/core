@@ -439,7 +439,8 @@ std::vector<PersonaSpec> SpecsFor(uint8 personaClass)
         case CLASS_HUNTER:
             return { PERSONA_SPEC_HUNTER_BEAST, PERSONA_SPEC_HUNTER_MARKS, PERSONA_SPEC_HUNTER_SURVIVAL };
         case CLASS_ROGUE:
-            return { PERSONA_SPEC_ROGUE_ASSA, PERSONA_SPEC_ROGUE_COMBAT, PERSONA_SPEC_ROGUE_SUBTLETY };
+            // P1: Combat only
+            return { PERSONA_SPEC_ROGUE_COMBAT };
         case CLASS_PRIEST:
             return { PERSONA_SPEC_PRIEST_DISC, PERSONA_SPEC_PRIEST_HOLY, PERSONA_SPEC_PRIEST_SHADOW };
         case CLASS_SHAMAN:
@@ -466,7 +467,7 @@ PersonaSpec PickRandomSpec(uint8 personaClass)
 
 bool IsImplemented(uint8 personaClass)
 {
-    return personaClass == CLASS_WARRIOR || personaClass == CLASS_SHAMAN;
+    return personaClass == CLASS_WARRIOR || personaClass == CLASS_SHAMAN || personaClass == CLASS_ROGUE;
 }
 
 char const* ClassName(uint8 personaClass)

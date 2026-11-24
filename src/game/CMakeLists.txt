@@ -68,6 +68,7 @@ set (game_SRCS
     AI/TotemAI.cpp
     AI/CreaturePersona/CreaturePersona.cpp
     AI/CreaturePersona/CreaturePersonaMapping.cpp
+    AI/CreaturePersona/CreaturePersonaRogue.cpp
     AI/CreaturePersona/CreaturePersonaShaman.cpp
     AI/CreaturePersona/CreaturePersonaTrace.cpp
     AI/CreaturePersona/CreaturePersonaWarrior.cpp
@@ -320,6 +321,7 @@ set (game_SRCS
     AI/TotemAI.h
     AI/CreaturePersona/CreaturePersona.h
     AI/CreaturePersona/CreaturePersonaMapping.h
+    AI/CreaturePersona/CreaturePersonaRogue.h
     AI/CreaturePersona/CreaturePersonaShaman.h
     AI/CreaturePersona/CreaturePersonaTrace.h
     AI/CreaturePersona/CreaturePersonaWarrior.h

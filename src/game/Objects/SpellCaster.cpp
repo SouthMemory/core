@@ -20,6 +20,8 @@
 #include "GameObject.h"
 #include "Totem.h"
 #include "CreatureAI.h"
+#include "Creature.h"
+#include "CreaturePersona.h"
 #include "Chat.h"
 #include "Spell.h"
 #include "SpellAuras.h"
@@ -1150,6 +1152,10 @@ float SpellCaster::CalculateSpellEffectValue(Unit const* target, SpellEntry cons
     Player const* pPlayer = ToPlayer();
 
     uint8 comboPoints = pPlayer ? pPlayer->GetComboPoints() : 0;
+    if (!comboPoints)
+        if (Creature const* crea = ToCreature())
+            if (CreaturePersona const* persona = crea->GetPersona())
+                comboPoints = persona->GetComboPoints();
 
     int32 level = GetLevel();
 

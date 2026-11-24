@@ -36,6 +36,7 @@
 #include "Group.h"
 #include "ObjectAccessor.h"
 #include "Creature.h"
+#include "CreaturePersona.h"
 #include "Pet.h"
 #include "GameObject.h"
 #include "GameObjectAI.h"
@@ -4612,14 +4613,19 @@ void Spell::EffectAddComboPoints(SpellEffectIndex /*effIdx*/)
     if (!unitTarget)
         return;
 
-    if (m_caster->GetTypeId() != TYPEID_PLAYER)
-        return;
-
     if (damage <= 0)
         return;
 
-    ((Player*)m_caster)->AddComboPoints(unitTarget, damage);
-    ((Player*)m_caster)->SetUInt64Value(PLAYER_FIELD_COMBO_TARGET, unitTarget->GetGUID());
+    if (m_caster->GetTypeId() == TYPEID_PLAYER)
+    {
+        ((Player*)m_caster)->AddComboPoints(unitTarget, damage);
+        ((Player*)m_caster)->SetUInt64Value(PLAYER_FIELD_COMBO_TARGET, unitTarget->GetGUID());
+        return;
+    }
+
+    if (Creature* crea = m_caster->ToCreature())
+        if (CreaturePersona* persona = crea->GetPersona())
+            persona->AddComboPoints(int8(damage));
 }
 
 void Spell::EffectCreateHouse(SpellEffectIndex effIdx)

@@ -31,6 +31,8 @@
 #include "ObjectMgr.h"
 #include "SpellMgr.h"
 #include "Player.h"
+#include "Creature.h"
+#include "CreaturePersona.h"
 #include "Pet.h"
 #include "DynamicObject.h"
 #include "Group.h"
@@ -4369,7 +4371,7 @@ void Spell::finish(bool ok)
         m_caster->ResetAttackTimer(RANGED_ATTACK);*/
 
     // Clear combo at finish state
-    if (m_caster->IsPlayer() && m_spellInfo->NeedsComboPoints())
+    if (m_spellInfo->NeedsComboPoints())
     {
         // Not drop combopoints if negative spell and if any miss on enemy exist
         bool needDrop = true;
@@ -4388,7 +4390,13 @@ void Spell::finish(bool ok)
             }
         }
         if (needDrop)
-            ((Player*)m_caster)->ClearComboPoints();
+        {
+            if (m_caster->IsPlayer())
+                ((Player*)m_caster)->ClearComboPoints();
+            else if (Creature* crea = m_caster->ToCreature())
+                if (CreaturePersona* persona = crea->GetPersona())
+                    persona->ClearComboPoints();
+        }
     }
 
     if (m_caster->IsPlayer())
@@ -7052,6 +7060,14 @@ SpellCastResult Spell::CheckPower() const
        (!m_targets.getUnitTarget() || m_targets.getUnitTarget()->GetObjectGuid() != ((Player*)m_casterUnit)->GetComboTargetGuid()))
         // warrior not have real combo-points at client side but use this way for mark allow Overpower use
         return m_casterUnit->GetClass() == CLASS_WARRIOR ? SPELL_FAILED_BAD_TARGETS : SPELL_FAILED_NO_COMBO_POINTS;
+
+    if (!m_casterUnit->IsPlayer() && m_spellInfo->NeedsComboPoints())
+    {
+        if (Creature const* crea = m_casterUnit->ToCreature())
+            if (CreaturePersona const* persona = crea->GetPersona())
+                if (persona->GetComboPoints() == 0)
+                    return SPELL_FAILED_NO_COMBO_POINTS;
+    }
 
     // health as power used - need check health amount
     if (m_spellInfo->powerType == POWER_HEALTH)

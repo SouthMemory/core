@@ -60,8 +60,9 @@ bool ChatHandler::HandlePersonaInfoCommand(char* /*args*/)
         CreaturePersonaMapping::SpecName(persona->GetSpec()));
 
     Powers const pt = target->GetPowerType();
-    PSendSysMessage("  power: %s %u/%u",
-        PowerTypeName(pt), target->GetPower(pt), target->GetMaxPower(pt));
+    PSendSysMessage("  power: %s %u/%u  combo=%u",
+        PowerTypeName(pt), target->GetPower(pt), target->GetMaxPower(pt),
+        uint32(persona->GetComboPoints()));
 
     std::ostringstream spells;
     persona->AppendSpellInfo(spells);
